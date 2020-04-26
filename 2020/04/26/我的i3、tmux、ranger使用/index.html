@@ -50,17 +50,17 @@
   };
 </script>
 
-  <meta name="description" content="Oh no，您访问的页面不存在啦！     您可以点击此处返回我的博客首页呦！      王玉奇">
-<meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found">
-<meta property="og:url" content="http:&#x2F;&#x2F;beichen1994.github.io&#x2F;404.html">
+  <meta name="description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。 在安装与配置ranger时，我是参照了以下教程   tmux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的i3、tmux、ranger使用">
+<meta property="og:url" content="http:&#x2F;&#x2F;beichen1994.github.io&#x2F;2020&#x2F;04&#x2F;26&#x2F;%E6%88%91%E7%9A%84i3%E3%80%81tmux%E3%80%81ranger%E4%BD%BF%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="王玉奇">
-<meta property="og:description" content="Oh no，您访问的页面不存在啦！     您可以点击此处返回我的博客首页呦！      王玉奇">
+<meta property="og:description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。 在安装与配置ranger时，我是参照了以下教程   tmux">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-26T02:06:39.000Z">
+<meta property="og:updated_time" content="2020-04-26T14:06:02.371Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://beichen1994.github.io/404">
+<link rel="canonical" href="http://beichen1994.github.io/2020/04/26/%E6%88%91%E7%9A%84i3%E3%80%81tmux%E3%80%81ranger%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -68,14 +68,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
-    isPage: true,
+    isPost: true,
+    isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>404 Not Found | 王玉奇
-  </title>
+  <title>我的i3、tmux、ranger使用 | 王玉奇</title>
   
 
 
@@ -208,49 +207,122 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://beichen1994.github.io/2020/04/26/%E6%88%91%E7%9A%84i3%E3%80%81tmux%E3%80%81ranger%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="红红火火恍恍惚惚">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王玉奇">
+    </span>
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          我的i3、tmux、ranger使用
+        </h2>
 
-<h2 class="post-title" itemprop="name headline">404 Not Found
-</h2>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-04-26 19:38:40 / 修改时间：22:06:02" itemprop="dateCreated datePublished" datetime="2020-04-26T19:38:40+08:00">2020-04-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A5%9E%E5%99%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">神器</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="ranger"><a class="markdownIt-Anchor" href="#ranger"></a> ranger</h2><p>ranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的<a href="https://github.com/beichen1994/MyLinuxConfig/tree/master/.config" target="_blank" rel="noopener">github仓库</a>中找到。<br>
+在安装与配置ranger时，我是参照了以下教程</p><ul>
+<li><a href></a></li>
+</ul><h2 id="tmux"><a class="markdownIt-Anchor" href="#tmux"></a> tmux</h2><a id="more"></a>
+
+
+
+<h2 id="i3"><a class="markdownIt-Anchor" href="#i3"></a> i3</h2>
+<p>i3是一个可以高度自定义的窗口管理器，对于i3的安装与配置，我是参考了以下4个教程。</p>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/mkosto/article/details/97238317" target="_blank" rel="noopener">手把手教你使用Linux安装i3wm桌面</a></p>
+</li>
+<li>
+<p><a href="https://www.jianshu.com/p/f4b3abc9a282" target="_blank" rel="noopener">Ubuntu18+i3配置</a></p>
+</li>
+<li>
+<p><a href="https://www.jianshu.com/p/81917864271e" target="_blank" rel="noopener">ubuntu系统配置i3wm窗口管理器</a></p>
+</li>
+<li>
+<p><a href="https://i3wm.org/docs/" target="_blank" rel="noopener">i3文档</a></p>
+</li>
+</ul>
+<p>我的i3配置文件可以在我的<a href="https://github.com/beichen1994/MyLinuxConfig/tree/master/.config" target="_blank" rel="noopener">github仓库</a>中找到</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/26/%E6%88%91%E7%9A%84docker%E4%BD%BF%E7%94%A8/" rel="prev" title="我的docker使用">
+      <i class="fa fa-chevron-left"></i> 我的docker使用
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <center>
-    Oh no，您访问的页面不存在啦！
-    您可以<a href="https://beichen1994.github.io">点击此处</a>返回我的博客首页呦！
-</center><blockquote class="blockquote-center">
-    王玉奇
-</blockquote>
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
@@ -280,6 +352,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ranger"><span class="nav-number">1.</span> <span class="nav-text"> ranger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tmux"><span class="nav-number">2.</span> <span class="nav-text"> tmux</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#i3"><span class="nav-number">3.</span> <span class="nav-text"> i3</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
