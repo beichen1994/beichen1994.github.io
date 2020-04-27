@@ -1,6 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我的Python学习笔记</title>
+    <url>/2020/04/27/%E6%88%91%E7%9A%84Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1><p>[TOC]</p><h2 id="turtle画个图"><a class="markdownIt-Anchor" href="#turtle画个图"></a> turtle画个图</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">r=25</span><br><span class="line">area=3.1415926*r*r</span><br><span class="line">print(area)`</span><br><span class="line">print(&quot;&#123;:.2f&#125;F&quot;.format(area))</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import turtle</span><br><span class="line">turtle.pensize(20)</span><br><span class="line">turtle.circle(10)</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.circle(80)</span><br><span class="line">turtle.circle(160)</span><br></pre></td></tr></table></figure>
+<h2 id="多行注释"><a class="markdownIt-Anchor" href="#多行注释"></a> 多行注释</h2>
+<p>“”&quot;<br>
+“”&quot;</p>
+<h2 id="单行注释"><a class="markdownIt-Anchor" href="#单行注释"></a> 单行注释</h2>
+<p>#</p>
+<h2 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量：</h2>
+<p>字母 数字 下划线 汉字（数字不能开头）</p>
+<h2 id="关键字"><a class="markdownIt-Anchor" href="#关键字"></a> 关键字：</h2>
+<p>33个</p>
+<h2 id="数据类型"><a class="markdownIt-Anchor" href="#数据类型"></a> 数据类型</h2>
+<h3 id="整数类型"><a class="markdownIt-Anchor" href="#整数类型"></a> 整数类型</h3>
+<p>100111101</p>
+<p>范围无限大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pow(x,y)</span><br></pre></td></tr></table></figure>
+<h3 id="浮点数类型"><a class="markdownIt-Anchor" href="#浮点数类型"></a> 浮点数类型</h3>
+<p>3.1415</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0.1+0.3--&gt;0.4</span><br><span class="line">0.1+0.2--&gt;0.3000000000000004存在不确定尾数</span><br><span class="line"></span><br><span class="line">round(0.1+0.2,1)--&gt;0.3</span><br><span class="line"></span><br><span class="line">&lt;a&gt;e&lt;b&gt;  a*10^b</span><br><span class="line">9.6e5--&gt;960000.0</span><br></pre></td></tr></table></figure>
+<h3 id="字符串"><a class="markdownIt-Anchor" href="#字符串"></a> 字符串</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;请输入带有符号的温度值&quot;</span><br><span class="line">&apos;C&apos;</span><br><span class="line"> &apos;&apos;&apos; Python       语言&apos;&apos;&apos; </span><br><span class="line">单引号中可以表示双引号</span><br><span class="line">双引号中可以表示单引号</span><br></pre></td></tr></table></figure>
+<h3 id="切片"><a class="markdownIt-Anchor" href="#切片"></a> 切片</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">... -5 -4 -3 -2 -1  </span><br><span class="line">    0 1 2 3 4 5 6...</span><br><span class="line">  [start:end:step] 从start 提取到end - 1，每step 个字符提取一个</span><br><span class="line">  [start:] 从start 提取到结尾</span><br><span class="line">  [:end] 从开头提取到end - 1</span><br></pre></td></tr></table></figure>
+<h3 id="操作函数"><a class="markdownIt-Anchor" href="#操作函数"></a> 操作函数</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">字符串操作函数</span><br><span class="line">x+y 连接x,y</span><br><span class="line">n*x  复制n次x</span><br><span class="line">x in s  x是否是s的子串</span><br></pre></td></tr></table></figure>
+<h3 id="字符串处理函数"><a class="markdownIt-Anchor" href="#字符串处理函数"></a> 字符串处理函数</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">len(x)</span><br><span class="line">str(x)  str(1.23) --&gt;&quot;1.23&quot;</span><br><span class="line">chr(u)    Unicode-&gt;单字符</span><br><span class="line">ord(x)    单字符 -&gt;Unicode</span><br></pre></td></tr></table></figure>
+<h3 id="字符串处理方法"><a class="markdownIt-Anchor" href="#字符串处理方法"></a> 字符串处理方法</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">str.lower() str.upper()</span><br><span class="line">str.split()    &quot;A B C&quot;.split(&quot;,&quot;) --&gt; [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;]</span><br><span class="line">str.count(sub)  &quot;a apple a day&quot;.count(&quot;a&quot;)--&gt;4</span><br><span class="line">str.replace(old,new)</span><br><span class="line">str.center(width,&quot;fillchar&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="元组"><a class="markdownIt-Anchor" href="#元组"></a> 元组</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">用()或省或tuple()</span><br><span class="line">一旦创建不能修改</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">creature = &quot;cat&quot;,&quot;dog&quot;,&quot;monky&quot;,&quot;tiger&quot;</span><br><span class="line">print(creature)</span><br><span class="line">color =(0x001100,&quot;blue&quot;,creature)</span><br><span class="line">print(color)</span><br><span class="line">print(creature[::-1])</span><br></pre></td></tr></table></figure>
+<h3 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">用[]或list()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#数据保护</span><br><span class="line"></span><br><span class="line">a=[&quot;cat&quot;,&quot;dog&quot;,&quot;tiger&quot;,1024]</span><br><span class="line">b=tuple(a)</span><br><span class="line">b</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">函数</span><br><span class="line">ls.append(x)</span><br><span class="line">ls.clear()</span><br><span class="line">ls.copy</span><br><span class="line">ls.insert(i,x)</span><br><span class="line">ls.pop(i)</span><br><span class="line">ls.remove(x)</span><br><span class="line">ls.reverse()</span><br></pre></td></tr></table></figure>
+<h6 id="字典"><a class="markdownIt-Anchor" href="#字典"></a> 字典</h6>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;键1:值1,键2:值2,键3:值3........&#125;</span><br><span class="line">dict()</span><br><span class="line">d.keys()</span><br><span class="line">d.values()</span><br><span class="line">d.items()  返回所有键值对信息</span><br><span class="line"></span><br><span class="line">d.get(k,default)</span><br><span class="line">d.pop(k,default)</span><br><span class="line">d.popitem()</span><br><span class="line">d.clear()</span><br><span class="line">len(d)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">d =&#123;&quot;中国&quot;:&quot;北京&quot;,&quot;美国&quot;:&quot;华盛顿&quot;,&quot;法国&quot;:&quot;巴黎&quot;&#125;</span><br><span class="line">print(d)</span><br><span class="line">print(d.keys())</span><br><span class="line">print(d.values())</span><br></pre></td></tr></table></figure>
+<h3 id="集合"><a class="markdownIt-Anchor" href="#集合"></a> 集合</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">A=&#123;&quot;python&quot;,123,(&apos;python&apos;,123)&#125;    #无序唯一</span><br><span class="line">print(A)</span><br><span class="line"></span><br><span class="line">B = set(&quot;pypy123&quot;)        #无序唯一</span><br><span class="line">print(B)</span><br></pre></td></tr></table></figure>
+<h3 id="集合运算"><a class="markdownIt-Anchor" href="#集合运算"></a> 集合运算</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">S|T  </span><br><span class="line">S&amp;T  </span><br><span class="line">S-T  </span><br><span class="line">S^T(补)  </span><br><span class="line">S&lt;=T S&lt;T(子集)</span><br><span class="line"></span><br><span class="line">S|=T </span><br><span class="line">S-=T </span><br><span class="line">S&amp;=T </span><br><span class="line">S^=T(更新集合S)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">S = &#123;&quot;p&quot;,&quot;y&quot;,123&#125;</span><br><span class="line">T = set(&quot;pypy123&quot;) </span><br><span class="line"></span><br><span class="line">print(S|T)</span><br><span class="line">print(S&amp;T)</span><br><span class="line">print(S^T)</span><br><span class="line">print(T-S)</span><br><span class="line">print(S-T)</span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">### 集合函数</span><br></pre></td></tr></table></figure>
+<p>S.add(x)<br>
+S.discard(x)  移除，若不在，不报错<br>
+S.remove(x)    移除，若不在，报错<br>
+S.clear()<br>
+S.pop()           随机返回一个元素<br>
+S.copy()<br>
+len(S)<br>
+x in S<br>
+x not in S<br>
+set(x)        将x转为集合类型</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">### 集合去重</span><br></pre></td></tr></table></figure>
+<p>ls = [“p”,“p”,“y”,“y”,123]<br>
+s = set(ls)<br>
+print(s)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 运算符</span><br><span class="line">### 算术运算符</span><br><span class="line"></span><br><span class="line">    x/y  除</span><br><span class="line">    x//y 整数除</span><br><span class="line">    x%y </span><br><span class="line">    x**y  x的y次方</span><br><span class="line">    xop=y x+=y x-=y x*=y x/=y</span><br><span class="line">    </span><br><span class="line">### 算数运算函数</span><br><span class="line"></span><br><span class="line">    abs(x) 绝对值</span><br><span class="line">    divmod(x,y)  (x//y,x%y)</span><br><span class="line">    pow(x,y)    x**y</span><br><span class="line">    pow(x,y,z)  (x**y)%z</span><br><span class="line">    round(x,d)</span><br><span class="line">    max(x1,x2,x3,x4)</span><br><span class="line">    min(x1,x2,x3,x4)</span><br><span class="line">    int(x) </span><br><span class="line">    float(x)     float(12) --&gt;12.0  float(&quot;1.23&quot;) --&gt; 1.23</span><br><span class="line">    complex(x)   complex(4) --&gt; 4+0j</span><br><span class="line">    </span><br><span class="line">      </span><br><span class="line">###  关系运算符</span><br><span class="line">```    </span><br><span class="line">&lt;</span><br><span class="line">&gt;</span><br><span class="line">== </span><br><span class="line">!=</span><br><span class="line">&gt;=</span><br><span class="line">&lt;=</span><br></pre></td></tr></table></figure>
+<h3 id="逻辑运算符"><a class="markdownIt-Anchor" href="#逻辑运算符"></a> 逻辑运算符</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">and </span><br><span class="line">or </span><br><span class="line">not</span><br></pre></td></tr></table></figure>
+<h2 id="语句"><a class="markdownIt-Anchor" href="#语句"></a> 语句</h2>
+<h3 id="赋值语句"><a class="markdownIt-Anchor" href="#赋值语句"></a> 赋值语句</h3>
+<h3 id="分支语句"><a class="markdownIt-Anchor" href="#分支语句"></a> 分支语句</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if 条件：</span><br><span class="line">    执行语句</span><br><span class="line">elif 条件：</span><br><span class="line">    执行语句</span><br><span class="line">else:</span><br><span class="line">    执行</span><br><span class="line">    </span><br><span class="line">简写：   &lt;表达式1&gt;if&lt;条件&gt;else&lt;表达式2&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="输入输出"><a class="markdownIt-Anchor" href="#输入输出"></a> 输入输出</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量 = input(&quot;something&quot;)</span><br><span class="line">print(&quot;something&quot;)</span><br><span class="line"> &quot;&#123;1&#125;计算机&#123;0&#125;的CPU占用率为&#123;2&#125;%&quot;.format(&quot;2018-101-10&quot;,&quot;C&quot;,10)</span><br><span class="line"> &#123;序号 ： &lt;填充&gt; &lt;对齐&gt; &lt;宽度&gt; &lt;,&gt; &lt;.精度&gt; &lt;类型&gt;&#125;</span><br><span class="line"> </span><br><span class="line">eval(字符串)</span><br><span class="line">将字符串str当成有效的表达式来求值并返回计算结果</span><br></pre></td></tr></table></figure>
+<h3 id="循环语句"><a class="markdownIt-Anchor" href="#循环语句"></a> 循环语句</h3>
+<h4 id="for循环"><a class="markdownIt-Anchor" href="#for循环"></a> for循环</h4>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for 变量 in 遍历结构:</span><br><span class="line">        执行语句1</span><br><span class="line">else:                  (一定执行)</span><br><span class="line">    执行语句2</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for i in range(N):</span><br><span class="line">    执行语句</span><br><span class="line">for i in range(M,N,K):</span><br><span class="line">    执行语句</span><br><span class="line"></span><br><span class="line">for c in &quot;python123&quot;:</span><br><span class="line">    print(c,end=&quot;,&quot;)</span><br><span class="line">    --&gt;p,y,t,h,o,n,1,2,3,</span><br><span class="line"></span><br><span class="line">for item in [123,&quot;PY&quot;,456]:</span><br><span class="line">    print(item,end=&quot;,&quot;)</span><br><span class="line">    ---&gt;123,PY,456</span><br><span class="line"></span><br><span class="line">for line in fi:</span><br><span class="line">    print(line)</span><br><span class="line">    ---&gt;</span><br><span class="line">    优美胜于丑陋</span><br><span class="line">    明了胜于隐晦</span><br><span class="line">    简洁胜于复杂</span><br></pre></td></tr></table></figure>
+<h4 id="while循环"><a class="markdownIt-Anchor" href="#while循环"></a> while循环</h4>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">while 条件表达式:</span><br><span class="line">    执行语句1</span><br><span class="line">else:                     (一定执行)</span><br><span class="line">    执行语句2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">a=3</span><br><span class="line">while a&gt;0:</span><br><span class="line">    a=a-1</span><br><span class="line">    print(a)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">break 跳出循环</span><br><span class="line">continue 跳出本次循环</span><br></pre></td></tr></table></figure>
+<h2 id="time库"><a class="markdownIt-Anchor" href="#time库"></a> time库</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line"># 时间获取</span><br><span class="line">print(time.gmtime()) #格林威治时间</span><br><span class="line"></span><br><span class="line">#时间格式化</span><br><span class="line">t=time.gmtime()</span><br><span class="line">print(time.strftime(&quot;%Y-%m-%d %H:%M:%S&quot;,t))</span><br><span class="line"></span><br><span class="line">## 程序计时</span><br><span class="line">start=time.perf_counter()</span><br><span class="line">end=time.perf_counter()</span><br><span class="line">print(end-start)</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">#调用一次perf_counter()，从计算机系统里随机选一个时间点A，</span><br><span class="line">计算其距离当前时间点B1有多少秒。</span><br><span class="line">当第二次调用该函数时，默认从第一次调用的时间点A算起，</span><br><span class="line">距离当前时间点B2有多少秒。</span><br><span class="line">两个函数取差，即实现从时间点B1到B2的计时功能。</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line">## 睡眠</span><br><span class="line"></span><br><span class="line">def wait():</span><br><span class="line">    time.sleep(3)</span><br><span class="line">wait()</span><br></pre></td></tr></table></figure>
+<h2 id="进度条"><a class="markdownIt-Anchor" href="#进度条"></a> 进度条</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">scale = 10</span><br><span class="line">print(&quot;--执行开始--&quot;)</span><br><span class="line">for i in range(scale+1):</span><br><span class="line">    a = &apos;*&apos;*i</span><br><span class="line">    b = &apos;.&apos;*(scale-i)</span><br><span class="line">    c = (i/scale)*100</span><br><span class="line">    print(&quot;&#123;:^3.0f&#125;%[&#123;&#125;-&#123;&#125;]&quot;.format(c,a,b))</span><br><span class="line">    time.sleep(0.1)</span><br><span class="line">print(&quot;--执行结束--&quot;)</span><br></pre></td></tr></table></figure>
+<h2 id="单行动态刷新"><a class="markdownIt-Anchor" href="#单行动态刷新"></a> 单行动态刷新</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 默认end=&quot;\n&quot;  光标退回到原来位置</span><br><span class="line">for i in range(101):</span><br><span class="line">    print(&quot;\r&#123;:.3f&#125;%&quot;.format(i),end=&quot;&quot;)   </span><br><span class="line">    time.sleep(0.1)</span><br></pre></td></tr></table></figure>
+<h2 id="进度条-2"><a class="markdownIt-Anchor" href="#进度条-2"></a> 进度条</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">str.center(width, fillchar)</span><br><span class="line">返回一个在指定的宽度 width中 且居中的字符串，fillchar 为填充的字符，默认为空格</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import time</span><br><span class="line">scale = 50</span><br><span class="line">print(&quot;执行开始&quot;.center(scale//2,&quot;-&quot;))  # 填充</span><br><span class="line">start = time.perf_counter()</span><br><span class="line">for i in range(scale+1):</span><br><span class="line">    a = &apos;*&apos;*i</span><br><span class="line">    b = &apos;.&apos;*(scale - i)</span><br><span class="line">    c = (i/scale)*100</span><br><span class="line">    dur = time.perf_counter()-start</span><br><span class="line">    print(&quot;\r&#123;:^3.0f&#125;%[&#123;&#125;-&#123;&#125;]&#123;:.2f&#125;s&quot;.format(c,a,b,dur),end=&quot;&quot;) #默认end=&quot;\n&quot;</span><br><span class="line">    time.sleep(0.1)</span><br><span class="line">print(&quot;\n&quot;+&quot;执行结束&quot;.center(scale//2,&apos;-&apos;))</span><br></pre></td></tr></table></figure>
+<h2 id="random库"><a class="markdownIt-Anchor" href="#random库"></a> random库</h2>
+<h3 id="基本随机数函数"><a class="markdownIt-Anchor" href="#基本随机数函数"></a> 基本随机数函数</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">random.seed(10)</span><br><span class="line">random.random()   0.0-1.0之间的随机小数</span><br></pre></td></tr></table></figure>
+<h3 id="扩展随机数函数"><a class="markdownIt-Anchor" href="#扩展随机数函数"></a> 扩展随机数函数</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">random.randint(a,b)      a-b之间的随机整数</span><br><span class="line">random.randrange(m,n,k)    m-n之间步长为k的随机整数</span><br><span class="line">random.getrandbits(k)         kbit长的随机整数</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">random.uniform(a,b)            a-b之间的随机小数</span><br><span class="line">random.choice(seq)             从seq中随机选择一个  </span><br><span class="line">random.shuffle(seq)               将seq打乱</span><br></pre></td></tr></table></figure>
+<h2 id="异常处理"><a class="markdownIt-Anchor" href="#异常处理"></a> 异常处理</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try :</span><br><span class="line">    语句1 </span><br><span class="line">except:         (出错执行)</span><br><span class="line">    语句2</span><br><span class="line">else:            (正常执行)</span><br><span class="line">    语句3</span><br><span class="line">finally:          (一定会执行)</span><br><span class="line">    语句4</span><br></pre></td></tr></table></figure>
+<h2 id="函数"><a class="markdownIt-Anchor" href="#函数"></a> 函数</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def 函数名(参数):</span><br><span class="line">    函数体</span><br><span class="line">    return 返回值</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def getNum():      #获取用户不定长度的输入</span><br><span class="line">    nums=[]</span><br><span class="line">    iNumStr = input(&quot;请输入数字(回车退出)&quot;)</span><br><span class="line">    while iNumStr != &quot;&quot;:</span><br><span class="line">        nums.append(eval(iNumStr))</span><br><span class="line">        iNumStr = input(&quot;请输入数字(回车退出)&quot;)</span><br><span class="line">    return nums</span><br><span class="line"></span><br><span class="line">def mean(numbers):    #计算平均值</span><br><span class="line">    s=0.0</span><br><span class="line">    for num in numbers:</span><br><span class="line">        s+=num</span><br><span class="line">    return s/len(numbers)</span><br><span class="line"></span><br><span class="line">def dev(numbers,mean):   #计算方差</span><br><span class="line">    sdev = 0.0</span><br><span class="line">    for num in numbers:</span><br><span class="line">        sdev = sdev+(num-mean)**2</span><br><span class="line">    return pow(sdev/(len(numbers)-1),0.5)</span><br><span class="line"></span><br><span class="line">def median(numbers):     #计算中位数</span><br><span class="line">    sorted(numbers)</span><br><span class="line">    size = len(numbers)</span><br><span class="line">    if size %2 ==0:</span><br><span class="line">        med = (numbers[size//2-1]+numbers[size//2])/2</span><br><span class="line">    else:</span><br><span class="line">        med = numbers[size//2]</span><br><span class="line">    return med</span><br><span class="line"></span><br><span class="line">n = getNum()</span><br><span class="line">m = mean(n)</span><br><span class="line">print(&quot;平均值:&#123;&#125;,方差:&#123;:.2&#125;,中位数:&#123;&#125;&quot;.format(m,dev(n,m)),median(n))</span><br></pre></td></tr></table></figure>
+<h2 id="文件操作"><a class="markdownIt-Anchor" href="#文件操作"></a> 文件操作</h2>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名 = open(文件名,打开方式)</span><br><span class="line">变量名.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rt rb   以读模式打开，指针回到开头</span><br><span class="line">r+      以读写模式打开，指针回到开头，文件不存在报错</span><br><span class="line">wt wb   以写模式打开，指针回到开头</span><br><span class="line">w+       以读写模式打开，指针回到开头，文件不存在新建</span><br><span class="line">a       以写模式打开，指针在结尾，文件不存在新建</span><br><span class="line">a+     以读写模式打开，指针在结尾，文件不存在新建</span><br></pre></td></tr></table></figure>
+<h3 id="文件内容读取"><a class="markdownIt-Anchor" href="#文件内容读取"></a> 文件内容读取</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;f&gt;.read(size)    读全部内容，前size长度的</span><br><span class="line">&lt;f.&gt;readline(size)  读一行内容，前size长度的</span><br><span class="line">&lt;f&gt;.readlines(hint) 读所有行，以每行为元素形成列表，前hint行的</span><br></pre></td></tr></table></figure>
+<h3 id="文件内容写入"><a class="markdownIt-Anchor" href="#文件内容写入"></a> 文件内容写入</h3>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;f&gt;.write(s)</span><br><span class="line">&lt;f&gt;.writelines(lines)</span><br><span class="line">&lt;f&gt;.seek(offset) 0 -开头 1-当前位置 2-结尾</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 文本文件</span><br><span class="line"></span><br><span class="line">tf = open(&quot;f.txt&quot;,&quot;rt&quot;)</span><br><span class="line">print(tf.readline())</span><br><span class="line">tf.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#二进制文件</span><br><span class="line"></span><br><span class="line">bf = open(&quot;f.txt&quot;,&quot;rb&quot;)</span><br><span class="line">print(bf.readline())</span><br><span class="line">bf.close()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fo = open(&quot;output.txt&quot;,&quot;w+&quot;)</span><br><span class="line">ls =[&quot;中国&quot;,&quot;法国&quot;,&quot;美国&quot;]</span><br><span class="line">fo.writelines(ls)        # 可以写进去</span><br><span class="line">fo.seek(0)               #指针回到开头，打印出来</span><br><span class="line">for line in fo:</span><br><span class="line">    print(line)</span><br><span class="line">fo.close()</span><br></pre></td></tr></table></figure>
+<h2 id="yield用法"><a class="markdownIt-Anchor" href="#yield用法"></a> yield用法</h2>
+<p>先把yield看成return<br>
+但return返回一个值后，程序结束</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def fun():</span><br><span class="line">    print(&quot;开始...&quot;)</span><br><span class="line">    while True:</span><br><span class="line">        res = yield 4</span><br><span class="line">        print(&quot;res:&quot;,res)</span><br><span class="line">g = fun()</span><br><span class="line">print(next(g))</span><br><span class="line">print(&quot;*&quot;*20)</span><br><span class="line">print(next(g))</span><br></pre></td></tr></table></figure>
+<h3 id="解释"><a class="markdownIt-Anchor" href="#解释"></a> 解释</h3>
+<ol>
+<li>
+<p>程序开始执行以后，因为fun函数中有yield关键字，所以fun函数并不会真的执行，<br>
+而是先得到一个生成器g(相当于一个对象)</p>
+</li>
+<li>
+<p>直到调用next方法，fun函数正式开始执行，先执行fun函数中的print方法，然后进入while循环</p>
+</li>
+<li>
+<p>程序遇到yield关键字，然后把yield想象成return,return了一个4之后，程序停止，<br>
+并没有执行赋值给res操作，此时next(g)语句执行完成，<br>
+所以输出的前两行（第一个是while上面的print的结果,第二个是return出的结果）是执行print(next(g))的结果</p>
+</li>
+<li>
+<p>程序执行，输出20个星</p>
+</li>
+<li>
+<p>又开始执行下面的print(next(g)),这个时候是从刚才那个next程序停止的地方开始执行的，<br>
+也就是要执行res的赋值操作，这时候要注意，这个时候赋值操作的右边是没有值的<br>
+（因为刚才那个是return出去了，并没有给赋值操作的左边传参数），<br>
+所以这个时候res赋值是None,所以接着下面的输出就是res:None,</p>
+</li>
+<li>
+<p>程序会继续在while里执行，又一次碰到yield,这个时候同样return 出4，然后程序停止，<br>
+print函数输出的4就是这次return出的4</p>
+</li>
+<li>
+<p>带yield的函数是一个生成器，而不是一个函数了，<br>
+这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，<br>
+这一次的next开始的地方是接着上一次的next停止的地方执行的，</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">def fun():</span><br><span class="line">    print(&quot;开始...&quot;)</span><br><span class="line">    while True:</span><br><span class="line">        res = yield 4</span><br><span class="line">        print(&quot;res:&quot;,res)</span><br><span class="line">g = fun()</span><br><span class="line">print(next(g))</span><br><span class="line">print(&quot;*&quot;*20)</span><br><span class="line">print(g.send(7))</span><br></pre></td></tr></table></figure>
+<p>send是发送一个参数给res的，因为上面讲到，return的时候，并没有把4赋值给res，<br>
+下次执行的时候只好继续执行赋值操作，只好赋值为None了，<br>
+而如果用send的话，开始执行的时候，先接着上一次（return 4之后）执行，先把7赋值给了res,<br>
+然后执行next的作用，遇见下一回的yield，return出结果后结束</p>
+]]></content>
+      <categories>
+        <category>Computer</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初探redis</title>
+    <url>/2020/04/27/%E5%88%9D%E6%8E%A2redis/</url>
+    <content><![CDATA[<p>redis数据库与关系型数据库不同，是一种key-value型数据库。其中key只能是字符串，而value则可以是String、Hash Map、List、Set、Zset。每种类型的使用方式都不同。</p><hr><ul>
+<li>String</li>
+</ul><a id="more"></a>
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set k1 v1</span><br><span class="line"></span><br><span class="line">get k1</span><br><span class="line"></span><br><span class="line">set k1 v11 </span><br><span class="line"></span><br><span class="line">get k1</span><br><span class="line"></span><br><span class="line">del k1</span><br><span class="line"></span><br><span class="line">get k1</span><br><span class="line"></span><br><span class="line">mset k1 v1 k2 v2</span><br><span class="line"></span><br><span class="line">mget k1 k2</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>Hash Map</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hset h1 name liming</span><br><span class="line"></span><br><span class="line">hget h1 name</span><br><span class="line"></span><br><span class="line">hmset h1 name liming age 11</span><br><span class="line"></span><br><span class="line">hgetall h1</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>List</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">lpush L1 v1</span><br><span class="line"></span><br><span class="line">lrange L1 0 0</span><br><span class="line"></span><br><span class="line">lpush L1 v2 v3</span><br><span class="line"></span><br><span class="line">lrange L1 0 -1</span><br><span class="line"></span><br><span class="line">rpush L1 r1 r2 r3</span><br><span class="line"></span><br><span class="line">lrange L1 0 -1</span><br><span class="line"></span><br><span class="line">lpop L1</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>Set</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sadd S1 v1</span><br><span class="line"></span><br><span class="line">smembers S1</span><br><span class="line"></span><br><span class="line">sadd S1 v2</span><br><span class="line"></span><br><span class="line">smembers S1</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>ZSet</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">keys *</span><br><span class="line"></span><br><span class="line">type &quot;proxies:mzitu&quot;</span><br><span class="line"></span><br><span class="line">zcard &quot;proxies:mzity&quot;</span><br><span class="line"></span><br><span class="line">zrange &quot;proxies:mzitu 0 -1 withscores</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>docker 安装redis</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker pull redis</span><br><span class="line"></span><br><span class="line">docker image ls -a</span><br><span class="line"></span><br><span class="line">docker run -dit -p 6379:6379 redis:latest redis-server</span><br><span class="line"></span><br><span class="line">docker  start -i 5d</span><br><span class="line"></span><br><span class="line">docker exec -it 5d redis-cli</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Computer</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的正则表达式总结</title>
+    <url>/2020/04/27/%E6%88%91%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>正则表达式用途非常广泛，唯有熟才能生巧。我只是偶尔会用到，所以在这里学习并记录一下。以备翻阅。</p><hr><ul>
+<li>主料</li>
+</ul><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">匹配所有出现的单个字符（断行不行）</span><br><span class="line"></span><br><span class="line">..</span><br><span class="line">匹配所有出现的双字符</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">匹配所有出现的三字符</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">....</span><br><span class="line">匹配所有出现的四字符</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\w</span><br><span class="line">匹配所有出现的0-9、大小写字母、下划线</span><br><span class="line"></span><br><span class="line">\W</span><br><span class="line">倒置\w</span><br><span class="line"></span><br><span class="line">\d</span><br><span class="line">匹配所有出现的单个数字</span><br><span class="line"></span><br><span class="line">\d\.\d</span><br><span class="line">可以匹配3.1</span><br><span class="line"></span><br><span class="line">\D</span><br><span class="line">倒置\d</span><br><span class="line"></span><br><span class="line">\s</span><br><span class="line">匹配所有出现的空格、tab、断行</span><br><span class="line"></span><br><span class="line">\S</span><br><span class="line">倒置\s</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[选择范围]</span><br><span class="line">匹配字符串中所有出现的该范围的任意字符组合</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[abc]</span><br><span class="line">匹配字符串所有出现的abc、所有出现的a、所有出现的b、所有出现的c、所有出现的ab、所有出现的bc、所有出现的ac、</span><br><span class="line"></span><br><span class="line">[a-z]</span><br><span class="line">匹配字符串中所有出现的a-z的所有组合</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[A-Z]</span><br><span class="line">匹配字符串中所有出现的A-Z的所有组合</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[0-9]</span><br><span class="line">匹配字符串中所有出现的0-9的所有组合</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">\b</span><br><span class="line">词的边界</span><br></pre></td></tr></table></figure><a id="more"></a>
+
+
+
+<hr>
+<ul>
+<li>配料</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[范围]+</span><br><span class="line">范围内的任意字符组合重复一次或多次</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[yY][oO]+</span><br><span class="line">比如可以匹配yo、yoooo、Yo、YoOo</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[范围]*</span><br><span class="line">范围内的任意字符组合可选(重复0次或多次)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[yY][oO]+[!~\.]*</span><br><span class="line">可以匹配yo、yooo、Yo、yo！、yo！！、yo</span><br></pre></td></tr></table></figure>
+<p>[范围]？<br>
+范围内的任意字符组合可选(重复0次或1次)</p>
+<p>[yY][oO]+p?[!~.]*<br>
+可以匹配 yop!!、yooop、Yoop、yo、yooooo、yooo~~~</p>
+<p>[范围]{a,b}<br>
+范围内的任意字符组合重复a-b次</p>
+<p>yo{2,}</p>
+<p>可以匹配yoo、yooo、yoooo（o至少出现2次）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br></pre></td></tr></table></figure>
+<p>yo{0,1} 等同于 yo？</p>
+<p>yo{0,} 等同于 yo*</p>
+<p>yo{1,} 等同于 yo+</p>
+<p>.+飞飞, .+追追<br>
+(.+)飞飞, (.+)追追<br>
+李全单飞飞，王花花追追<br>
+匹配到两组，一组是李全单，一组是王花花</p>
+<pre class="highlight"><code class></code></pre>
+]]></content>
+      <categories>
+        <category>Computer</category>
+      </categories>
+      <tags>
+        <tag>正则表达式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我对manjaro的一些探索</title>
     <url>/2020/04/27/%E6%88%91%E5%AF%B9manjaro%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8E%A2%E7%B4%A2/</url>
     <content><![CDATA[<p>在初次接触linux时，我发现除了大众经常使用的Ubuntu系统外，还有人在使用manjaro。这个系统非常稳定，且不会像Ubuntu一样，经常找不到相应的软件。<br>
@@ -26,8 +267,11 @@
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">conda list</span><br><span class="line">查看安装了哪些包</span><br><span class="line"></span><br><span class="line">conda env list</span><br><span class="line">conda info -e</span><br><span class="line">查看当前存在哪些虚拟环境</span><br><span class="line"></span><br><span class="line">conda update conda</span><br><span class="line">检查更新当前conda</span><br><span class="line"></span><br><span class="line">conda create -n your_env_name python=X.X（2.7、3.6等)</span><br><span class="line">创建python版本为X.X、名字为your_env_name的虚拟环境</span><br><span class="line"></span><br><span class="line">python --version</span><br><span class="line">可以检查当前python的版本</span><br><span class="line"></span><br><span class="line">source activate your_env_name(虚拟环境名称)</span><br><span class="line">conda install -n your_env_name [package]</span><br><span class="line">即可安装package到your_env_name中</span><br><span class="line"></span><br><span class="line">source deactivate</span><br><span class="line">conda deactivate</span><br><span class="line">退出python虚拟环境</span><br><span class="line"></span><br><span class="line">conda remove -n your_env_name(虚拟环境名称) --all</span><br><span class="line">删除虚拟环境</span><br><span class="line"></span><br><span class="line">conda remove --name your_env_name  package_name 、</span><br><span class="line">删除虚拟环境中的包</span><br><span class="line"></span><br><span class="line">conda create -n tf --clone rcnn</span><br><span class="line">克隆虚拟环境rcnn到tf</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line"></span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line">设置清华镜像源</span><br><span class="line"></span><br><span class="line">conda config --show channels</span><br><span class="line">显示所有的镜像下载通道</span><br><span class="line"></span><br><span class="line">conda config --remove channels &apos;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/＇</span><br><span class="line">删除镜像</span><br><span class="line"></span><br><span class="line">conda install nb_conda_kernels</span><br><span class="line">在jupyternotebook安装虚拟环境</span><br><span class="line"></span><br><span class="line">conda config --remove-key channels</span><br><span class="line">恢复到默认源</span><br><span class="line"></span><br><span class="line">cd ~</span><br><span class="line">vim .bashrc</span><br><span class="line">export PYTHONIOENCODING=utf-8</span><br><span class="line">source .bashrc</span><br><span class="line">设置python输入输出环境变量</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>神器</category>
+        <category>Computer</category>
       </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
   </entry>
   <entry>
     <title>我的i3、tmux、ranger使用</title>
