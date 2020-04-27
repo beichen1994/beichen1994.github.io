@@ -4,9 +4,7 @@
     <title>我的git笔记</title>
     <url>/2020/04/27/%E6%88%91%E7%9A%84git%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>一开始我对git还是比较抵触，学习成本较高，因为不懂所以不知其便利。但终究还是没有忍住git对我的诱惑，便尝试了起来。我是按照<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">廖雪峰的git课程</a>进行学习的。目前我也只能算是入门，还远没有达到精通的地步。现将git的学习笔记进行一下整理。</p><a id="more"></a>
-<p>工作区<br>
-版本库:暂存区、分支、Head指针<br>
-<img src="https://s1.ax1x.com/2020/04/27/Jf31Gq.jpg" alt="Jf31Gq.jpg"></p>
+<p><img src="https://s1.ax1x.com/2020/04/27/Jf31Gq.jpg" alt="Jf31Gq.jpg"></p>
 <ul>
 <li>git初始配置</li>
 </ul>
