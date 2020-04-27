@@ -1,0 +1,213 @@
+// Custom styles.
+/*******************首页样式*****************************/
+
+// 网站背景（自适应）
+body {
+    background:url(/images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+
+    /*这是设置底部文字, 看个人需要修改*/
+#footer > div > div {    
+        color:#de5e5e;
+    }
+}
+
+
+//改变背景色和透明度等
+.main-inner {
+background: rgba(0, 0, 0, 0.75);
+padding: 1.5em; //博文边框
+opacity: 0.7; //整体透明度，包括字体
+border-radius: 1em; //边框圆角
+}
+
+
+// 字体颜色
+.post-body {
+    color: #000000; //黑色
+}
+
+
+//博文列表内大框样式
+.post {
+  width: 100%;
+  margin-top: 0.5em; //距离顶部
+  margin-bottom: 3em; //距离下一篇文章顶部距离
+  padding: 1em; //预览文字内缩距离
+  -webkit-box-shadow: 0 0 0.5em rgba(202, 203, 203, .5); // 边框渐变线样式
+ }
+
+ // 网站描述
+.site-subtitle{ font-size: 1em; color: black; }
+
+// 网站标题
+.site-title {
+    font-size: 1.5em; //字体大小
+    font-weight: bold; //字体：粗体
+}
+
+// 标题背景
+.brand{
+    background: transparent; //透明
+}
+
+// 菜单栏
+.menu {
+	margin-top: 0.5em;
+	padding-left: 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5); //菜单栏背景色
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0.5em; // 圆角化
+}
+
+// 菜单图表链接 以及 超链接样式
+.menu .menu-item a {
+    color: rgba(0,0,0,1);
+}
+.menu .menu-item a:hover {
+    color: #ff106c;
+    border-bottom-color: #ff106c;
+}
+
+// 菜单字体颜色
+.menu .menu-item a {
+    color: #000000; //
+}
+
+// 菜单
+.menu .menu-item a {
+    font-size: 0.8em; //字体大小
+}
+.menu .menu-item a:hover {
+    border-bottom-color: #000000;
+}
+
+//菜单分类显示数字
+.menu .menu-item .badge {
+    display: inline-block;
+    padding: 0.1em 0.4em;
+    margin-left: 5px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #a9a6a654;
+}
+
+.posts-expand .post-title-link {
+    display: inline-block;
+    position: relative;
+    color: #000000; // 文章标题颜色
+    border-bottom: none;
+    line-height: 1.2;
+    vertical-align: top;
+}
+
+
+
+
+// 头部inner
+.header-inner {
+    padding: 3em 0 2em;
+}
+
+// 站点描述
+.site-description {
+    font-size: 0.8em;
+}
+
+// 作者名
+.site-author-name {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.5em;
+}
+
+// 移动端优化-解决移动端按钮被遮挡
+.site-nav-toggle {
+  top: 0;
+  transform:  translateY(78%);
+}
+
+// 普通按钮样式
+element.style {
+    background-color: #43413f;
+    color: #ffffff;
+}
+.btn:hover {
+    border-color: #000000; // 鼠标经过时边框颜色
+    color: #0000FF;
+    background: #000000;
+}
+
+
+
+
+
+
+
+
+
+/*******************文章样式*****************************/
+
+// 文章背景框框
+.use-motion .post-block, .use-motion .pagination, .use-motion .comments {
+    opacity: 0.5;
+}
+
+// 文章之间的分割线
+.posts-expand .post-eof {
+    margin: 9em auto 9em;
+    background: black;
+}
+
+
+// 自定义页脚跳动的心样式
+@keyframes heartAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+#heart {
+    animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+    color: rgb(255, 113, 168);
+}
+
+
+// 搜索功能样式
+.local-search-popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: ;
+    margin-left: ;
+    height: 80%;
+    padding: 0;
+    background: #000000ab; // 搜索框背景色
+    color: #000000; // 搜索框文字颜色
+    z-index: 9999;
+    border-radius: 0.5em;
+}
+
+// 鼠标样式
+  * {
+      cursor: url("/img/鼠标_正常.ico"),auto!important
+  }
+  :active {
+      cursor: url("/img/鼠标_按下.ico"),auto!important
+  }
+  :link {
+      cursor: url("/img/鼠标_手.ico"),auto!important
+  }
+
