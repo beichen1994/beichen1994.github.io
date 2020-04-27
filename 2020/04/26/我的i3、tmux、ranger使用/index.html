@@ -50,14 +50,14 @@
   };
 </script>
 
-  <meta name="description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。 在安装与配置ranger时，我是参照了以下教程   tmux">
+  <meta name="description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。ranger的操作方式有点类似vim，下面是我的常用命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的i3、tmux、ranger使用">
 <meta property="og:url" content="http:&#x2F;&#x2F;beichen1994.github.io&#x2F;2020&#x2F;04&#x2F;26&#x2F;%E6%88%91%E7%9A%84i3%E3%80%81tmux%E3%80%81ranger%E4%BD%BF%E7%94%A8&#x2F;index.html">
 <meta property="og:site_name" content="王玉奇">
-<meta property="og:description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。 在安装与配置ranger时，我是参照了以下教程   tmux">
+<meta property="og:description" content="rangerranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的github仓库中找到。ranger的操作方式有点类似vim，下面是我的常用命令">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-26T14:06:02.371Z">
+<meta property="og:updated_time" content="2020-04-27T00:31:38.200Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://beichen1994.github.io/2020/04/26/%E6%88%91%E7%9A%84i3%E3%80%81tmux%E3%80%81ranger%E4%BD%BF%E7%94%A8/">
@@ -238,10 +238,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-26 19:38:40 / 修改时间：22:06:02" itemprop="dateCreated datePublished" datetime="2020-04-26T19:38:40+08:00">2020-04-26</time>
+              <time title="创建时间：2020-04-26 19:38:40" itemprop="dateCreated datePublished" datetime="2020-04-26T19:38:40+08:00">2020-04-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-27 08:31:38" itemprop="dateModified" datetime="2020-04-27T08:31:38+08:00">2020-04-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -272,13 +278,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="ranger"><a class="markdownIt-Anchor" href="#ranger"></a> ranger</h2><p>ranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的<a href="https://github.com/beichen1994/MyLinuxConfig/tree/master/.config" target="_blank" rel="noopener">github仓库</a>中找到。<br>
-在安装与配置ranger时，我是参照了以下教程</p><ul>
-<li><a href></a></li>
-</ul><h2 id="tmux"><a class="markdownIt-Anchor" href="#tmux"></a> tmux</h2><a id="more"></a>
+        <h2 id="ranger"><a class="markdownIt-Anchor" href="#ranger"></a> ranger</h2><p>ranger是一个文件管理器，可以让我们在终端下方便快捷的操作文件和文件夹，我的ranger配置文件可以在我的<a href="https://github.com/beichen1994/MyLinuxConfig/tree/master/.config" target="_blank" rel="noopener">github仓库</a>中找到。</p><p>ranger的操作方式有点类似vim，下面是我的常用命令</p><a id="more"></a>
 
 
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">hjkl左下上右</span><br><span class="line"></span><br><span class="line">gh (/home</span><br><span class="line"></span><br><span class="line">gm (/mnt</span><br><span class="line"></span><br><span class="line">gd (/dev</span><br><span class="line"></span><br><span class="line">gp (/tmp</span><br><span class="line"></span><br><span class="line">cw 重命名</span><br><span class="line"></span><br><span class="line">pp 粘贴</span><br><span class="line"></span><br><span class="line">dd 剪切</span><br><span class="line"></span><br><span class="line">yy 复制</span><br><span class="line"></span><br><span class="line">space 选中</span><br></pre></td></tr></table></figure>
+<p>在安装与配置ranger时，我是参照了以下教程</p>
+<ul>
+<li>
+<p><a href="http://www.huangpan.net/posts/ji-ke/2019-08-21-ranger.html#toc-heading-75" target="_blank" rel="noopener">Ranger 用法总结</a></p>
+</li>
+<li>
+<p><a href="https://www.cnblogs.com/zhangsf/p/3322627.html" target="_blank" rel="noopener">ranger文件管理器</a></p>
+</li>
+<li>
+<p><a href="https://wiki.archlinux.org/index.php/ranger_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" target="_blank" rel="noopener">ranger文档</a></p>
+</li>
+</ul>
+<h2 id="tmux"><a class="markdownIt-Anchor" href="#tmux"></a> tmux</h2>
+<p>tmux可以让我们在一个终端中同时开启多个会话，看起来更加酷炫，从此不再多个窗口来回切换。但是比较受限于屏幕大小，如果屏幕太小，窗口被切分的太小，看起来不舒服。</p>
+<p>我常用的tmux命令如下:</p>
+<hr>
+<ul>
+<li>启动与退出</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">tmux</span><br><span class="line"></span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>会话（Session）管理</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">tmux ls</span><br><span class="line"></span><br><span class="line">tmux new -s mysess</span><br><span class="line"></span><br><span class="line">tmux detach</span><br><span class="line"></span><br><span class="line">tmux attach -t mysess</span><br><span class="line"></span><br><span class="line">tmux switch -t mysess</span><br><span class="line"></span><br><span class="line">tmux rename-session -t 0 bc</span><br><span class="line"></span><br><span class="line">tmux kill-session -t mysess</span><br></pre></td></tr></table></figure>
+<hr>
+<p>*窗格（pane）管理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">tmux split-window</span><br><span class="line">划分上下两个窗格</span><br><span class="line"></span><br><span class="line">tmux split-window -h</span><br><span class="line">划分左右两个窗格</span><br><span class="line"></span><br><span class="line">tmux select-pane -U</span><br><span class="line">光标移动到上方窗格</span><br><span class="line"></span><br><span class="line">tmux select-pane -D</span><br><span class="line">光标移动到下方窗格</span><br><span class="line"></span><br><span class="line">tmux select-pane -L</span><br><span class="line">光标移动到左方窗格</span><br><span class="line"></span><br><span class="line">tmux select-pane -R</span><br><span class="line">光标移动到右方窗格</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tmux swap-pane -U</span><br><span class="line">当前窗格上移</span><br><span class="line"></span><br><span class="line">tmux swap-pane -D</span><br><span class="line">当前窗格下移</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>快捷键</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Ctrl+b    %</span><br><span class="line">划分左右两个窗格</span><br><span class="line"></span><br><span class="line">Ctrl+b    &quot;</span><br><span class="line">划分上下两个窗格</span><br><span class="line"></span><br><span class="line">Ctrl+b    箭头</span><br><span class="line">光标移动到其他窗格</span><br><span class="line"></span><br><span class="line">Ctrl+b    &#123;</span><br><span class="line">当前窗格左移</span><br><span class="line"></span><br><span class="line">Ctrl+b    &#125;</span><br><span class="line">当前窗格右移</span><br><span class="line"></span><br><span class="line">Ctrl+b    Ctrl+o</span><br><span class="line">当前窗格上移</span><br><span class="line"></span><br><span class="line">Ctrl+b    Alt+o</span><br><span class="line">当前窗格下移</span><br><span class="line"></span><br><span class="line">Ctrl+b x</span><br><span class="line">关闭当前窗格</span><br><span class="line"></span><br><span class="line">Ctrl+b !</span><br><span class="line">将当前窗格拆分为一个独立窗口</span><br><span class="line"></span><br><span class="line">Ctrl+b q</span><br><span class="line">显示窗格编号</span><br><span class="line"></span><br><span class="line">窗口管理</span><br><span class="line"></span><br><span class="line">tmux new-window  -n bc1</span><br><span class="line">新建一个窗口</span><br><span class="line"></span><br><span class="line">tmux select-window -t bc1</span><br><span class="line">切换窗口</span><br><span class="line"></span><br><span class="line">tmux rename-window bc1</span><br><span class="line">重命名窗口</span><br><span class="line"></span><br><span class="line">快捷键</span><br><span class="line"></span><br><span class="line">Ctrl+b    c</span><br><span class="line">创建一个新窗口</span><br><span class="line"></span><br><span class="line">Ctrl+b    w</span><br><span class="line">从列表中选择窗口</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Ctrl+b    ,</span><br><span class="line">重命名窗口</span><br><span class="line"></span><br><span class="line">Ctrl+b    p</span><br><span class="line">切换到上一个窗口</span><br><span class="line"></span><br><span class="line">Ctrl+b    n</span><br><span class="line">切换到下一个窗口</span><br><span class="line"></span><br><span class="line">Ctrl+b    窗口编号</span><br><span class="line">切换到指定编号的窗口</span><br></pre></td></tr></table></figure>
 <h2 id="i3"><a class="markdownIt-Anchor" href="#i3"></a> i3</h2>
 <p>i3是一个可以高度自定义的窗口管理器，对于i3的安装与配置，我是参考了以下4个教程。</p>
 <ul>
