@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-04-29T07:55:25.940Z</updated>
+  <updated>2020-04-29T07:58:22.823Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/"/>
     <id>http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/</id>
     <published>2020-04-29T07:34:25.000Z</published>
-    <updated>2020-04-29T07:55:25.940Z</updated>
+    <updated>2020-04-29T07:58:22.823Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
       
     
     </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
     
     
   </entry>
