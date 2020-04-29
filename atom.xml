@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-04-27T09:33:19.625Z</updated>
+  <updated>2020-04-29T07:55:25.940Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的stata学习</title>
+    <link href="http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/"/>
+    <id>http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/</id>
+    <published>2020-04-29T07:34:25.000Z</published>
+    <updated>2020-04-29T07:55:25.940Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;整理一下stata的笔记&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-stata&quot;&gt;&lt;code class=&quot;language-stata&quot;&gt;use
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的可视化笔记1</title>
+    <link href="http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/"/>
+    <id>http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/</id>
+    <published>2020-04-29T06:34:59.000Z</published>
+    <updated>2020-04-29T07:32:41.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。&lt;/p&gt;
+&lt;h2 id=&quot;导入绘图环境&quot;&gt;&lt;a href=&quot;#导入绘图环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>我的git笔记</title>
@@ -490,58 +538,6 @@ sudo passwd
     
       <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫之代10代理</title>
-    <link href="http://beichen1994.github.io/2020/02/08/pa-chong-zhi-dai-10-dai-li/"/>
-    <id>http://beichen1994.github.io/2020/02/08/pa-chong-zhi-dai-10-dai-li/</id>
-    <published>2020-02-08T14:55:00.000Z</published>
-    <updated>2020-04-27T18:21:38.040Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;基本原理&quot;&gt;&lt;a href=&quot;#基本原理&quot; class=&quot;headerlink&quot; title=&quot;基本原理&quot;&gt;&lt;/a&gt;基本原理&lt;/h1&gt;&lt;p&gt;服务器检测的是某个IP单位时间的请求次数&lt;br&gt;代理即代理服务器(proxy
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="爬虫" scheme="http://beichen1994.github.io/tags/%E7%88%AC%E8%99%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫之9Ajax</title>
-    <link href="http://beichen1994.github.io/2020/02/08/pa-chong-zhi-9ajax/"/>
-    <id>http://beichen1994.github.io/2020/02/08/pa-chong-zhi-9ajax/</id>
-    <published>2020-02-08T14:53:54.000Z</published>
-    <updated>2020-04-27T18:21:37.184Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Ajax-Asynchronous-JavaScript-and-XML-（异步的JavaScript和XML）&quot;&gt;&lt;a href=&quot;#Ajax-Asynchronous-JavaScript-and-XML-（异步的JavaScript和XML）&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="爬虫" scheme="http://beichen1994.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
