@@ -4,28 +4,17 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="我的正则表达式总结, 王玉奇的博客">
+    <meta name="keywords" content="我的可视化笔记2, 王玉奇的博客">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="正则表达式用途非常广泛，唯有熟才能生巧。我只是偶尔会用到，所以在这里学习并记录一下。以备翻阅。
-
-
-主料
-
-.
-匹配所有出现的单个字符（断行不行）
-
-..
-匹配所有出现的双字符
-
-
-...
-匹配所有出现的三字符
-
-
-....
-匹配所有出现的">
+    <meta name="description" content="统计图持续补充
+单变量图分类变量
+简单条图  matplotlib  DataFrame.plot.bar()
+  seaborn  seaborn.barplot(
+  1. x:绘图中所使用的分类
+  2. y:连续变量
+  3. hu">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -33,7 +22,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>我的正则表达式总结 | 王玉奇的博客</title>
+    <title>我的可视化笔记2 | 王玉奇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -346,13 +335,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        我的正则表达式总结
+                        我的可视化笔记2
                     </div>
                 </div>
             </div>
@@ -462,11 +451,7 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        
-                        <a href="/tags/正则表达式/" target="_blank">
-                            <span class="chip bg-color">正则表达式</span>
-                        </a>
-                        
+                        <span class="chip bg-color">无标签</span>
                     </div>
                     
                 </div>
@@ -475,8 +460,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Computer/" class="post-category" target="_blank">
-                            Computer
+                        <a href="/categories/科研/" class="post-category" target="_blank">
+                            科研
                         </a>
                         
                     </div>
@@ -487,7 +472,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-27
+                    2020-04-30
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -501,7 +486,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    477
+                    378
                 </div>
                 
 
@@ -524,108 +509,73 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>正则表达式用途非常广泛，唯有熟才能生巧。我只是偶尔会用到，所以在这里学习并记录一下。以备翻阅。</p>
-<hr>
-<ul>
-<li>主料</li>
+                <h1 id="统计图"><a href="#统计图" class="headerlink" title="统计图"></a>统计图</h1><p>持续补充</p>
+<h2 id="单变量图"><a href="#单变量图" class="headerlink" title="单变量图"></a>单变量图</h2><h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><ul>
+<li><p>简单条图<br>  matplotlib<br>  DataFrame.plot.bar()</p>
+<p>  seaborn<br>  seaborn.barplot(</p>
+<pre><code>  1. x:绘图中所使用的分类
+  2. y:连续变量
+  3. hue:颜色分组变量名
+  4. data:数据框名称
+  5. order:
+  6. hue_order:
+  7. orient: 
+  8. saturation=0.75: 直条颜色的饱和度</code></pre><p>  )</p>
+</li>
+<li><p>点图</p>
+</li>
+<li><p>饼图</p>
+</li>
+<li><p>百分比图</p>
+</li>
+<li><p>Pareto图</p>
+</li>
+<li><p>圆环图</p>
+</li>
+<li><p>气泡图</p>
+</li>
 </ul>
-<pre><code>.
-匹配所有出现的单个字符（断行不行）
-
-..
-匹配所有出现的双字符
-
-
-...
-匹配所有出现的三字符
-
-
-....
-匹配所有出现的四字符
-
-
-\w
-匹配所有出现的0-9、大小写字母、下划线
-
-\W
-倒置\w
-
-\d
-匹配所有出现的单个数字
-
-\d\.\d
-可以匹配3.1
-
-\D
-倒置\d
-
-\s
-匹配所有出现的空格、tab、断行
-
-\S
-倒置\s
-
-
-[选择范围]
-匹配字符串中所有出现的该范围的任意字符组合
-
-
-[abc]
-匹配字符串所有出现的abc、所有出现的a、所有出现的b、所有出现的c、所有出现的ab、所有出现的bc、所有出现的ac、
-
-[a-z]
-匹配字符串中所有出现的a-z的所有组合
-
-
-[A-Z]
-匹配字符串中所有出现的A-Z的所有组合
-
-
-[0-9]
-匹配字符串中所有出现的0-9的所有组合
-
-
-\b
-词的边界</code></pre><hr>
-<ul>
-<li>配料</li>
+<h3 id="数值变量"><a href="#数值变量" class="headerlink" title="数值变量"></a>数值变量</h3><ul>
+<li><p>条带图</p>
+</li>
+<li><p>地毯图</p>
+</li>
+<li><p>直方图</p>
+</li>
+<li><p>茎叶图</p>
+</li>
+<li><p>箱图</p>
+</li>
+<li><p>增强箱图</p>
+</li>
+<li><p>KDE图(核密度估计)</p>
+</li>
+<li><p>提琴图</p>
+</li>
+<li><p>P-P图</p>
+</li>
+<li><p>Q-Q图</p>
+</li>
 </ul>
-<pre><code>[范围]+
-范围内的任意字符组合重复一次或多次
+<h2 id="双变量图"><a href="#双变量图" class="headerlink" title="双变量图"></a>双变量图</h2><ul>
+<li><p>分类变量vs分类变量<br>  分组图<br>  行面板图<br>  列面板图<br>  分组条图<br>  堆积条图<br>  百分条图(马赛克图)<br>  树状图<br>  圆环图</p>
+</li>
+<li><p>数值变量vs分类变量<br>  分组条带图<br>  分组箱图<br>  分组提琴图<br>  同类图形组合<br>  简单条图<br>  面积图<br>  线图</p>
+</li>
+<li><p>数值变量vs数值变量<br>  散点图<br>  Hexplot/Sunflower图<br>  KDE图/等高线图</p>
+</li>
+</ul>
+<h2 id="多变量图"><a href="#多变量图" class="headerlink" title="多变量图"></a>多变量图</h2><ul>
+<li>双变量图+更多的分类变量<br>  采用图例对二维图进行扩充<br>  颜色图例<br>  线宽<br>  线形/散点<br>  线填充图案</li>
+</ul>
+<p>行面板图/列面板图组合</p>
+<p>将多个连续变量看作一个变量，虚拟一个新的分组变量用于区分<br>双轴图</p>
+<p>图形矩阵：主对角线呈现单变量分布，非主对角线呈现联合分布</p>
+<p>统计地图</p>
+<p>甘特图<br>表巴图<br>人口金字塔、漏斗图、K线图、瀑布图</p>
+<p>词云<br>热图</p>
+<p>雷达图<br>凹凸图</p>
 
-
-[yY][oO]+
-比如可以匹配yo、yoooo、Yo、YoOo
-
-
-[范围]*
-范围内的任意字符组合可选(重复0次或多次)
-
-
-[yY][oO]+[!~\.]*
-可以匹配yo、yooo、Yo、yo！、yo！！、yo
-[范围]？
-范围内的任意字符组合可选(重复0次或1次)
-
-[yY][oO]+p?[!~.]*
-可以匹配 yop!!、yooop、Yoop、yo、yooooo、yooo~~~
-
-[范围]{a,b}
-范围内的任意字符组合重复a-b次
-
-yo{2,}
-
-可以匹配yoo、yooo、yoooo（o至少出现2次）</code></pre><hr>
-<pre><code>yo{0,1} 等同于 yo？
-
-yo{0,} 等同于 yo*
-
-yo{1,} 等同于 yo+
-
-.+飞飞, .+追追
-(.+)飞飞, (.+)追追
-李全单飞飞，王花花追追
-匹配到两组，一组是李全单，一组是王花花</code></pre>
             </div>
             <hr />
 
@@ -783,9 +733,9 @@ yo{1,} 等同于 yo+
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《我的正则表达式总结》
+                    《我的可视化笔记2》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/04/27/wo-de-zheng-ze-biao-da-shi-zong-jie/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王玉奇
             </a> 采用
@@ -826,7 +776,7 @@ yo{1,} 等同于 yo+
         repo: 'beichen1994.github.io',
         owner: 'beichen1994',
         admin: "godweiyang",
-        id: '2020/04/27/wo-de-zheng-ze-biao-da-shi-zong-jie/',
+        id: '2020/04/30/wo-de-ke-shi-hua-bi-ji-2/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1109,51 +1059,49 @@ yo{1,} 等同于 yo+
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/04/27/wo-de-git-bi-ji/">
+                <a href="/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="我的git笔记">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="我的可视化笔记2">
                         
-                        <span class="card-title">我的git笔记</span>
+                        <span class="card-title">我的可视化笔记2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一开始我对git还是比较抵触，学习成本较高，因为不懂所以不知其便利。但终究还是没有忍住git对我的诱惑，便尝试了起来。我是按照廖雪峰的git课程进行学习的。目前我也只能算是入门，还远没有达到精通的地步。现将git的学习笔记进行一下整理。
-
-
+                            统计图持续补充
+单变量图分类变量
+简单条图  matplotlib  DataFrame.plot.bar()
+  seaborn  seaborn.barplot(
+  1. x:绘图中所使用的分类
+  2. y:连续变量
+  3. hu
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Computer/" class="post-category" target="_blank">
-                                    Computer
+                            <a href="/categories/科研/" class="post-category" target="_blank">
+                                    科研
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/git/" target="_blank">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1164,49 +1112,50 @@ yo{1,} 等同于 yo+
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/27/wo-de-python-xue-xi-bi-ji/">
+                <a href="/2020/04/29/wo-de-stata-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="我的Python学习笔记">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="我的stata学习">
                         
-                        <span class="card-title">我的Python学习笔记</span>
+                        <span class="card-title">我的stata学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            [TOC]
-turtle画个图r=25
-area=3.1415926*r*r
-print(area)`
-print(&quot;{:.2f}F&quot;.format(area))import turtle
-turtle.pensize(
+                            整理一下stata的笔记
+use E:\grilic_small.dta,clear
+打开dta数据文件
+
+clear
+清空内存中的数据
+
+describe
+d
+审查数据
+
+list s lnw
+查看变量s和lnw的具体数据
+
+list s
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Computer/" class="post-category" target="_blank">
-                                    Computer
+                            <a href="/categories/科研/" class="post-category" target="_blank">
+                                    科研
                                 </a>
                             
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/" target="_blank">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1350,6 +1299,25 @@ turtle.pensize(
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">

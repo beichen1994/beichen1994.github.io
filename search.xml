@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>我的可视化笔记2</title>
+      <link href="/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/"/>
+      <url>/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="统计图"><a href="#统计图" class="headerlink" title="统计图"></a>统计图</h1><p>持续补充</p><h2 id="单变量图"><a href="#单变量图" class="headerlink" title="单变量图"></a>单变量图</h2><h3 id="分类变量"><a href="#分类变量" class="headerlink" title="分类变量"></a>分类变量</h3><ul><li><p>简单条图<br>  matplotlib<br>  DataFrame.plot.bar()</p><p>  seaborn<br>  seaborn.barplot(</p><pre><code>  1. x:绘图中所使用的分类  2. y:连续变量  3. hue:颜色分组变量名  4. data:数据框名称  5. order:  6. hue_order:  7. orient:   8. saturation=0.75: 直条颜色的饱和度</code></pre><p>  )</p></li><li><p>点图</p></li><li><p>饼图</p></li><li><p>百分比图</p></li><li><p>Pareto图</p></li><li><p>圆环图</p></li><li><p>气泡图</p></li></ul><h3 id="数值变量"><a href="#数值变量" class="headerlink" title="数值变量"></a>数值变量</h3><ul><li><p>条带图</p></li><li><p>地毯图</p></li><li><p>直方图</p></li><li><p>茎叶图</p></li><li><p>箱图</p></li><li><p>增强箱图</p></li><li><p>KDE图(核密度估计)</p></li><li><p>提琴图</p></li><li><p>P-P图</p></li><li><p>Q-Q图</p></li></ul><h2 id="双变量图"><a href="#双变量图" class="headerlink" title="双变量图"></a>双变量图</h2><ul><li><p>分类变量vs分类变量<br>  分组图<br>  行面板图<br>  列面板图<br>  分组条图<br>  堆积条图<br>  百分条图(马赛克图)<br>  树状图<br>  圆环图</p></li><li><p>数值变量vs分类变量<br>  分组条带图<br>  分组箱图<br>  分组提琴图<br>  同类图形组合<br>  简单条图<br>  面积图<br>  线图</p></li><li><p>数值变量vs数值变量<br>  散点图<br>  Hexplot/Sunflower图<br>  KDE图/等高线图</p></li></ul><h2 id="多变量图"><a href="#多变量图" class="headerlink" title="多变量图"></a>多变量图</h2><ul><li>双变量图+更多的分类变量<br>  采用图例对二维图进行扩充<br>  颜色图例<br>  线宽<br>  线形/散点<br>  线填充图案</li></ul><p>行面板图/列面板图组合</p><p>将多个连续变量看作一个变量，虚拟一个新的分组变量用于区分<br>双轴图</p><p>图形矩阵：主对角线呈现单变量分布，非主对角线呈现联合分布</p><p>统计地图</p><p>甘特图<br>表巴图<br>人口金字塔、漏斗图、K线图、瀑布图</p><p>词云<br>热图</p><p>雷达图<br>凹凸图</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科研 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的stata学习</title>
       <link href="/2020/04/29/wo-de-stata-xue-xi/"/>
       <url>/2020/04/29/wo-de-stata-xue-xi/</url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-04-29T07:58:22.823Z</updated>
+  <updated>2020-04-30T08:00:02.214Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的可视化笔记2</title>
+    <link href="http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/"/>
+    <id>http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/</id>
+    <published>2020-04-30T03:24:22.000Z</published>
+    <updated>2020-04-30T08:00:02.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;统计图&quot;&gt;&lt;a href=&quot;#统计图&quot; class=&quot;headerlink&quot; title=&quot;统计图&quot;&gt;&lt;/a&gt;统计图&lt;/h1&gt;&lt;p&gt;持续补充&lt;/p&gt;
+&lt;h2 id=&quot;单变量图&quot;&gt;&lt;a href=&quot;#单变量图&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>我的stata学习</title>
@@ -515,30 +540,6 @@ sudo passwd
     </summary>
     
       <category term="诗书" scheme="http://beichen1994.github.io/categories/%E8%AF%97%E4%B9%A6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Writing</title>
-    <link href="http://beichen1994.github.io/2020/02/25/english-writing/"/>
-    <id>http://beichen1994.github.io/2020/02/25/english-writing/</id>
-    <published>2020-02-25T13:45:32.000Z</published>
-    <updated>2020-04-27T18:21:59.808Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Introduction-to-Academic-Writing-and-Editing&quot;&gt;&lt;a href=&quot;#Introduction-to-Academic-Writing-and-Editing&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
     
     
   </entry>
