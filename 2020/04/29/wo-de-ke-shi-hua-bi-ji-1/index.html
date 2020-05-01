@@ -9,9 +9,8 @@
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。
-导入绘图环境import matplotlib
-matplotlib.__version__
-from matplo">
+导入绘图环境from matplotlib import pyplot as plt
+plt.rcParams[&#39;f">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -332,7 +331,7 @@ from matplo">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -483,7 +482,7 @@ from matplo">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    511
+                    524
                 </div>
                 
 
@@ -507,20 +506,18 @@ from matplo">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。</p>
-<h2 id="导入绘图环境"><a href="#导入绘图环境" class="headerlink" title="导入绘图环境"></a>导入绘图环境</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> matplotlib
-matplotlib<span class="token punctuation">.</span>__version__
-<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
+<h2 id="导入绘图环境"><a href="#导入绘图环境" class="headerlink" title="导入绘图环境"></a>导入绘图环境</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
+plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'SimHei'</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'中文字体'</span><span class="token punctuation">)</span>
 
-<span class="token keyword">import</span> seaborn
-seaborn<span class="token punctuation">.</span>__version__
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
 sns<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">#加载seaborn默认的格式设定</span>
 
 <span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-
-plt<span class="token punctuation">.</span>raParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'SimHei'</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'中文字体'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">import</span> os<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><a href="https://www.jianshu.com/p/d20a0971756b" target="_blank" rel="noopener">linux中matplotlib无法显示中文解决办法</a></p>
 <h2 id="图形对象"><a href="#图形对象" class="headerlink" title="图形对象"></a>图形对象</h2><p><img src="https://s1.ax1x.com/2020/04/29/JTDsv6.png" alt="JTDsv6.png"></p>
 <h3 id="创建Figure对象"><a href="#创建Figure对象" class="headerlink" title="创建Figure对象"></a>创建Figure对象</h3><p>matplotlib首先创建fig对象，然后基于fig对象绘图</p>
 <pre class="line-numbers language-python"><code class="language-python">matploblib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>
@@ -557,7 +554,7 @@ legend：显示图示
 annotate：绘制图形标注
 axhspan：回执垂直和水平色块
 fill：填充区域<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="柱状图"><a href="#柱状图" class="headerlink" title="柱状图"></a>柱状图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>
+<h3 id="柱状-简单条图"><a href="#柱状-简单条图" class="headerlink" title="柱状(简单条图)"></a>柱状(简单条图)</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>
 
 <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>barh<span class="token punctuation">(</span>
@@ -1100,7 +1097,7 @@ plt<span class="token punctuation">.</span>savefig<span class="token punctuation
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="我的stata学习">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="我的stata学习">
                         
                         <span class="card-title">我的stata学习</span>
                     </div>
@@ -1155,7 +1152,7 @@ list s
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="我的git笔记">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="我的git笔记">
                         
                         <span class="card-title">我的git笔记</span>
                     </div>
@@ -1362,7 +1359,7 @@ list s
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">31.3k</span>
+            <span class="white-color">31.4k</span>
             
 
             <br>
