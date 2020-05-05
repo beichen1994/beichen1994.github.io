@@ -166,7 +166,7 @@
         <div class="logo-name">王玉奇的博客</div>
         <div class="logo-desc">
             
-            Less is more
+            跑步让我身体自由，写作让我思维自由
             
         </div>
     </div>
@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -445,7 +445,11 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/docker/" target="_blank">
+                            <span class="chip bg-color">docker</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -480,7 +484,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    830
+                    918
                 </div>
                 
 
@@ -516,6 +520,13 @@ docker rmi centos/centos:7.2
 删除其中一个镜像，这里的镜像有两个repo引用，并且没有容器使用
 即删除时指定名称，而不是IMAGE ID。
 
+
+先查询依赖
+docker image inspect --format=&#39;{{.RepoTags}} {{.Id}} {{.Parent}}&#39; $(docker image ls -q --filter since=XXX)    # XXX指镜像ID
+
+然后根据根据TAG删除容器
+docker rm REPOSITORY:TAG
+
 docker container ls -a  列出本地所有容器
 docker container rm a43d5   删除容器 docker container prune  删除所有容器
 docker container logs  查看容器日志
@@ -547,7 +558,19 @@ docker start -i 282fae
 指定交互式，启动282fae容器</code></pre><pre><code>注意 在docker容器中共 /lib/systemd/system/docker.service 中 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock -H tcp://0.0.0.0:2375 才会正常显示端口</code></pre><pre><code>jupyter notebook --port 8888 --ip 0.0.0.0 --allow-root
 docker运行jupyter</code></pre><pre><code>sudo apt-get remove docker docker-engine docker.io docker-ce
 sudo apt-get autoremove
-卸载docker</code></pre>
+卸载docker</code></pre><p>docker 镜像下载速度慢？不急！快看下面</p>
+<pre><code>cd /etc/docker
+
+vi daemon.json（如果没有，就新建一个）
+
+{
+
+    &quot;registry-mirrors&quot;:[&quot;https://almtd3fa.mirror.aliyuncs.com&quot;]      
+
+}
+
+service docker restart</code></pre><p>下载速度飞起！！</p>
+
             </div>
             <hr />
 
@@ -1039,7 +1062,7 @@ sudo apt-get autoremove
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="我的i3、tmux、ranger使用">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="我的i3、tmux、ranger使用">
                         
                         <span class="card-title">我的i3、tmux、ranger使用</span>
                     </div>
@@ -1084,7 +1107,7 @@ gh (/ho
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="我的vim使用">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="我的vim使用">
                         
                         <span class="card-title">我的vim使用</span>
                     </div>
@@ -1263,7 +1286,7 @@ gh (/ho
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">31.4k</span>
+            <span class="white-color">31.8k</span>
             
 
             <br>
