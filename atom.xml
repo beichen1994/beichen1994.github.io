@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-05T14:33:43.412Z</updated>
+  <updated>2020-05-05T14:50:42.599Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -17,11 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>重新拾起我的Java</title>
+    <link href="http://beichen1994.github.io/2020/05/05/chong-xin-shi-qi-wo-de-java/"/>
+    <id>http://beichen1994.github.io/2020/05/05/chong-xin-shi-qi-wo-de-java/</id>
+    <published>2020-05-05T14:50:42.000Z</published>
+    <updated>2020-05-05T14:50:42.599Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>我的docker使用2</title>
     <link href="http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/"/>
     <id>http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/</id>
     <published>2020-05-05T13:15:44.000Z</published>
-    <updated>2020-05-05T14:33:43.412Z</updated>
+    <updated>2020-05-05T14:49:56.971Z</updated>
     
     <summary type="html">
     
@@ -517,31 +531,6 @@ sudo passwd
     
     
       <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TotalCommand</title>
-    <link href="http://beichen1994.github.io/2020/03/21/totalcommand/"/>
-    <id>http://beichen1994.github.io/2020/03/21/totalcommand/</id>
-    <published>2020-03-21T14:38:28.000Z</published>
-    <updated>2020-04-26T05:06:49.684Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;TotalCommand一般被称为TC，是windows下的一款资源管理器，有了她，windows下的所有文件皆被玩弄于鼓掌之间，哈哈！！&lt;/p&gt;
-&lt;h2 id=&quot;目录与磁盘跳转&quot;&gt;&lt;a href=&quot;#目录与磁盘跳转&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
-    
     
   </entry>
   
