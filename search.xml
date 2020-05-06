@@ -8,9 +8,21 @@
       <link href="/2020/05/05/chong-xin-shi-qi-wo-de-java/"/>
       <url>/2020/05/05/chong-xin-shi-qi-wo-de-java/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="对于Java，我想说的一些话"><a href="#对于Java，我想说的一些话" class="headerlink" title="对于Java，我想说的一些话"></a>对于Java，我想说的一些话</h2><p>&ensp;&ensp;说起Java，我对其的感情还是比较复杂。这门语言应该是我主动自学的第一门编程语言。由于在本科阶段的学习中，有C语言和C++语言等课程，所以对编程还算是比较了解。一开始是从网上找的马士兵老师的Java视频进行自学，马士兵老师的教学视频质量是真的好，在学习过程中我也慢慢的喜欢上了Java。但是由于我没有良好的做笔记的习惯，所以我虽然花了很多的时间，但是我对Java的学习就像狗熊掰棒子一样，学了后面的忘了前面的，同时没有正向的反馈和可视化的学习成果，我的Java一直没有突破瓶颈期。以至于后来对于Java，我竟提不起丝毫的兴趣。<br>&ensp;&ensp;而我之所以要重新开始拾起Java，很大一方面原因是我优化了我的学习过程和学习环境。我现在可以使用docker来运行Java环境，省去了麻烦的配置过程。我可以使用vscode或者vim来进行编程，同时使用git管理并同步我的代码，不至于我的代码会杂乱无章。我还可以随时在博客中记录笔记。这些都将极大的提升我的学习效率和学习效果。<br>&ensp;&ensp;虽然我以后可能还是不会经常使用Java，但毕竟我对Java也倾注了不少的心血，我不希望我的努力白废掉，至少可以对他人能够有所帮助。</p><p>##目前打算使用的环境</p>]]></content>
       
       
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
       
     </entry>
     
