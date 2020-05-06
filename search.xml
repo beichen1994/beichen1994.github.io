@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>爬虫管理平台使用</title>
+      <link href="/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/"/>
+      <url>/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<p>#爬虫管理平台</p><p>我目前的爬虫都是一个个单独的程序文件，顶多同步到github，并没有一个统一的可视化管理平台。之前看到过崔大的<a href="https://github.com/Gerapy/Gerapy" target="_blank" rel="noopener">Gerapy</a>，但没有使用下来。</p><p>最近在github发现了一个爬虫管理平台，名为<a href="https://github.com/crawlab-team/crawlab" target="_blank" rel="noopener">Crawlab</a>，目前该平台还在不断地完善中，以后有望会进行商用，我目前已经进行了安装，看下效果。</p><p>Crawlab提供了docker的安装方式，安装简单快捷。启动后会同时开启四个容器，分别是Crawlab的master容器，worker容器，mongodb容器以及redis容器。但是很可惜，我之前并没有使用过mongodb，对于redis也是一知半解，所以用起来并不顺手。哎，看来还是要学习一下mongodb和redis了。真是学不完的知识啊！</p><p>Crawlab在启动后，输入<a href="http://localhost:8080/，即可打开管理界面。参照Crawlab的文档，即可使用。我目前按照文档的说明，在conda中安装了crawlab-sdk，可以通过命令行操作该爬虫管理平台。" target="_blank" rel="noopener">http://localhost:8080/，即可打开管理界面。参照Crawlab的文档，即可使用。我目前按照文档的说明，在conda中安装了crawlab-sdk，可以通过命令行操作该爬虫管理平台。</a></p><pre><code>登录获取 Tokencrawlab login -u admin -a http://localhost:8080/api上传指定目录并附带爬虫名称、显示名称、结果集等信息crawlab upload \    -d /path/to/spider \ # 爬虫目录    -n &lt;spider_name&gt; \ # 爬虫名称    -N &lt;display_name&gt; \ # 显示名称    -m &lt;execute_command&gt; \ # 执行命令    -c &lt;result_collection&gt; # 结果集查看节点列表crawlab nodes查看爬虫列表crawlab spiders查看任务列表crawlab tasks查看定时任务列表crawlab schedules</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>重新拾起我的Java</title>
       <link href="/2020/05/05/chong-xin-shi-qi-wo-de-java/"/>
       <url>/2020/05/05/chong-xin-shi-qi-wo-de-java/</url>

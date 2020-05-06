@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-06T01:22:28.549Z</updated>
+  <updated>2020-05-06T15:45:21.817Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>爬虫管理平台使用</title>
+    <link href="http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/"/>
+    <id>http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/</id>
+    <published>2020-05-06T14:21:57.000Z</published>
+    <updated>2020-05-06T15:45:21.817Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;#爬虫管理平台&lt;/p&gt;
+&lt;p&gt;我目前的爬虫都是一个个单独的程序文件，顶多同步到github，并没有一个统一的可视化管理平台。之前看到过崔大的&lt;a href=&quot;https://github.com/Gerapy/Gerapy&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="爬虫" scheme="http://beichen1994.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>重新拾起我的Java</title>
@@ -508,32 +535,6 @@ sudo passwd
         
         
           &lt;p&gt;Tensorflow:
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度学习-RNN</title>
-    <link href="http://beichen1994.github.io/2020/03/23/shen-du-xue-xi-rnn/"/>
-    <id>http://beichen1994.github.io/2020/03/23/shen-du-xue-xi-rnn/</id>
-    <published>2020-03-23T02:14:10.000Z</published>
-    <updated>2020-04-27T18:22:02.360Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;传统的BP-back-propagation-神经网络结构&quot;&gt;&lt;a href=&quot;#传统的BP-back-propagation-神经网络结构&quot; class=&quot;headerlink&quot; title=&quot;传统的BP(back
         
       
     
