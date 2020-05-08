@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-07T01:23:37.986Z</updated>
+  <updated>2020-05-08T06:52:23.619Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的chrome插件vimium使用记录</title>
+    <link href="http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/"/>
+    <id>http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/</id>
+    <published>2020-05-08T06:04:53.000Z</published>
+    <updated>2020-05-08T06:52:23.619Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;如果电脑上的一切都可以用键盘来完成，那该是多么美好的一件事情啊！&lt;/p&gt;
+&lt;p&gt;至少在chrome浏览器中，可以让我们做到这一点了，那就是chrome插件，vimium。从名字来看，应该就是仿照vim来使用的。&lt;/p&gt;
+&lt;p&gt;我觉得一开始使用它，第一步还是要把它的快捷键操作
+        
+      
+    
+    </summary>
+    
+      <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>爬虫管理平台使用</title>
@@ -509,32 +535,6 @@ sudo passwd
         
         
           &lt;h1 id=&quot;文档信息向量化&quot;&gt;&lt;a href=&quot;#文档信息向量化&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度学习-Kears+TensorFlow</title>
-    <link href="http://beichen1994.github.io/2020/03/23/shen-du-xue-xi-kears-tensorflow/"/>
-    <id>http://beichen1994.github.io/2020/03/23/shen-du-xue-xi-kears-tensorflow/</id>
-    <published>2020-03-23T06:43:45.000Z</published>
-    <updated>2020-04-27T18:22:00.784Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Tensorflow:
         
       
     
