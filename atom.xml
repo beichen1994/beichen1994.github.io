@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-12T01:29:41.760Z</updated>
+  <updated>2020-05-12T01:35:28.422Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初高中古文汇总4</title>
+    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/"/>
+    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/</id>
+    <published>2020-05-12T01:35:11.000Z</published>
+    <updated>2020-05-12T01:35:28.422Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;史记-屈原列传&quot;&gt;&lt;a href=&quot;#史记-屈原列传&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初高中古文汇总3</title>
+    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-3/"/>
+    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-3/</id>
+    <published>2020-05-12T01:31:17.000Z</published>
+    <updated>2020-05-12T01:35:04.775Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;蜀道难&quot;&gt;&lt;a href=&quot;#蜀道难&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>初高中古文汇总2</title>
@@ -69,6 +121,32 @@
   </entry>
   
   <entry>
+    <title>我的统计学笔记6</title>
+    <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-6/"/>
+    <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-6/</id>
+    <published>2020-05-12T01:00:32.000Z</published>
+    <updated>2020-05-12T01:38:46.348Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;统计推断-统计估计&quot;&gt;&lt;a href=&quot;#统计推断-统计估计&quot; class=&quot;headerlink&quot; title=&quot;统计推断/统计估计&quot;&gt;&lt;/a&gt;统计推断/统计估计&lt;/h1&gt;&lt;p&gt;*从数据得到关于现实世界的结论的过程叫做统计推断(statistical
+        
+      
+    
+    </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+      <category term="统计学" scheme="http://beichen1994.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>我的统计学笔记5</title>
     <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-5/"/>
     <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-5/</id>
@@ -109,7 +187,7 @@
     <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-3/"/>
     <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-3/</id>
     <published>2020-05-12T01:00:02.000Z</published>
-    <updated>2020-05-12T01:00:54.274Z</updated>
+    <updated>2020-05-12T01:39:08.752Z</updated>
     
     <summary type="html">
     
@@ -123,34 +201,29 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>我的统计学笔记2</title>
     <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-2/"/>
     <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-2/</id>
-    <published>2020-05-11T16:00:00.000Z</published>
-    <updated>2020-05-12T00:56:43.218Z</updated>
+    <published>2020-05-12T00:56:30.000Z</published>
+    <updated>2020-05-12T01:39:04.375Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: 我的统计学笔记2&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-05-12
-        
-      
-    
     </summary>
     
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+      <category term="统计学" scheme="http://beichen1994.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
-    <title></title>
+    <title>我的统计学笔记1</title>
     <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-1/"/>
     <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-1/</id>
-    <published>2020-05-11T16:00:00.000Z</published>
-    <updated>2020-05-12T00:55:37.481Z</updated>
+    <published>2020-05-12T00:46:28.000Z</published>
+    <updated>2020-05-12T01:38:58.633Z</updated>
     
     <summary type="html">
     
@@ -158,45 +231,25 @@
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;title: 我的统计学笔记1&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-05-12
+          &lt;h1 id=&quot;统计学&quot;&gt;&lt;a href=&quot;#统计学&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+      <category term="统计学" scheme="http://beichen1994.github.io/tags/%E7%BB%9F%E8%AE%A1%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-6/"/>
-    <id>http://beichen1994.github.io/2020/05/12/wo-de-tong-ji-xue-bi-ji-6/</id>
-    <published>2020-05-11T16:00:00.000Z</published>
-    <updated>2020-05-12T01:04:09.945Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: 我的统计学笔记6&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-05-12
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
+    <title>我参加的数学建模比赛</title>
     <link href="http://beichen1994.github.io/2020/05/11/shu-xue-jian-mo-lun-wen-xie-zuo/"/>
     <id>http://beichen1994.github.io/2020/05/11/shu-xue-jian-mo-lun-wen-xie-zuo/</id>
-    <published>2020-05-10T16:00:00.000Z</published>
-    <updated>2020-05-11T11:16:29.880Z</updated>
+    <published>2020-05-11T09:55:34.000Z</published>
+    <updated>2020-05-12T01:39:43.398Z</updated>
     
     <summary type="html">
     
@@ -204,13 +257,16 @@
       
         
         
-          &lt;hr&gt;
-&lt;p&gt;title: 我参加的数学建模比赛&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-05-11
+          &lt;h2 id=&quot;初衷&quot;&gt;&lt;a href=&quot;#初衷&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="数学建模" scheme="http://beichen1994.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
@@ -219,7 +275,7 @@
     <link href="http://beichen1994.github.io/2020/05/10/bi-jiao-you-qu-de-mei-xue-zuo-ye/"/>
     <id>http://beichen1994.github.io/2020/05/10/bi-jiao-you-qu-de-mei-xue-zuo-ye/</id>
     <published>2020-05-10T07:27:22.000Z</published>
-    <updated>2020-05-11T02:31:57.321Z</updated>
+    <updated>2020-05-12T01:40:06.627Z</updated>
     
     <summary type="html">
     
@@ -234,7 +290,7 @@
     
     </summary>
     
-      <category term="随便写写" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E4%BE%BF%E5%86%99%E5%86%99/"/>
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
@@ -442,57 +498,6 @@
     
       <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>我的可视化笔记1</title>
-    <link href="http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/"/>
-    <id>http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/</id>
-    <published>2020-04-29T06:34:59.000Z</published>
-    <updated>2020-05-01T01:05:04.291Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。&lt;/p&gt;
-&lt;h2 id=&quot;导入绘图环境&quot;&gt;&lt;a href=&quot;#导入绘图环境&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的git笔记</title>
-    <link href="http://beichen1994.github.io/2020/04/27/wo-de-git-bi-ji/"/>
-    <id>http://beichen1994.github.io/2020/04/27/wo-de-git-bi-ji/</id>
-    <published>2020-04-27T06:55:44.000Z</published>
-    <updated>2020-05-11T15:00:11.320Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;一开始我对git还是比较抵触，学习成本较高，因为不懂所以不知其便利。但终究还是没有忍住git对我的诱惑，便尝试了起来。我是按照&lt;a href=&quot;https://www.liaoxuefeng.com/wiki/896043488029600&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="git" scheme="http://beichen1994.github.io/tags/git/"/>
     
   </entry>
   
