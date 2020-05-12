@@ -338,7 +338,7 @@ sudo passwd root
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -489,14 +489,14 @@ sudo passwd root
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    540
+                    682
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
                 
@@ -693,7 +693,31 @@ export PATH=$PATH:/opt/baidunetdisk
 
 重新打开一个新的终端
 google-chrome
-baidunetdisk</code></pre>
+baidunetdisk</code></pre><ul>
+<li><p>查看APT软件安装路径</p>
+<pre><code>whereis vim
+whereis gedit
+whereis pandoc</code></pre></li>
+<li><p>设置环境变量<br>当用户要求系统运行一个程序而没有告诉它程序所在的完整路径时，系统出了在当前目录下寻找此程序外，还要到环境变量中指定的路径中寻找</p>
+</li>
+</ul>
+<ol>
+<li><p>home目录下的.bashrc文件,只针对一个特定的用户<br>vim ~/.bashrc</p>
+</li>
+<li><p>etc目录下的profile文件，针对所有用户<br>vim etc/profile</p>
+</li>
+</ol>
+<pre><code>
+变量名=变量值
+
+JAVA_HOME = /opt/jdk-12.0.2
+CLASS_PATH = .
+PATH = $JAVA_HOME/bin:$PATH
+export JAVA_HOME CLASSPATH PATH
+
+:wq
+
+source .bashrc</code></pre>
             </div>
             <hr />
 
@@ -1185,7 +1209,7 @@ baidunetdisk</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="我的vim使用">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="我的vim使用">
                         
                         <span class="card-title">我的vim使用</span>
                     </div>
@@ -1227,7 +1251,7 @@ baidunetdisk</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="我的ubuntu必备工具与软件">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="我的ubuntu必备工具与软件">
                         
                         <span class="card-title">我的ubuntu必备工具与软件</span>
                     </div>
@@ -1405,7 +1429,7 @@ baidunetdisk</code></pre>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">33k</span>
+            <span class="white-color">45.2k</span>
             
 
             <br>
