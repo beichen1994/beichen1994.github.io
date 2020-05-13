@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-12T01:35:28.422Z</updated>
+  <updated>2020-05-13T07:01:40.784Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -17,11 +17,90 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://beichen1994.github.io/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/"/>
+    <id>http://beichen1994.github.io/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/</id>
+    <published>2020-05-12T16:00:00.000Z</published>
+    <updated>2020-05-13T07:01:40.784Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;title: 超喜爱的《第25小时》电影台词&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-05-13
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库命令</title>
+    <link href="http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/"/>
+    <id>http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/</id>
+    <published>2020-05-12T02:28:50.000Z</published>
+    <updated>2020-05-12T02:37:26.745Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;show databases;
+
+use company;
+show tables;
+describer user;
+
+quit&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;create database company;
+
+create table
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="数据库" scheme="http://beichen1994.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初高中古文汇总5</title>
+    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-5/"/>
+    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-5/</id>
+    <published>2020-05-12T02:07:26.000Z</published>
+    <updated>2020-05-12T02:13:37.347Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;马说&quot;&gt;&lt;a href=&quot;#马说&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>初高中古文汇总4</title>
     <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/"/>
     <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/</id>
     <published>2020-05-12T01:35:11.000Z</published>
-    <updated>2020-05-12T01:35:28.422Z</updated>
+    <updated>2020-05-12T02:07:04.255Z</updated>
     
     <summary type="html">
     
@@ -422,82 +501,6 @@
     
     
       <category term="Java" scheme="http://beichen1994.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的docker使用2</title>
-    <link href="http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/"/>
-    <id>http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/</id>
-    <published>2020-05-05T13:15:44.000Z</published>
-    <updated>2020-05-05T14:49:56.971Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;我想说的话&quot;&gt;&lt;a href=&quot;#我想说的话&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
-    
-    
-      <category term="docker" scheme="http://beichen1994.github.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的可视化笔记2</title>
-    <link href="http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/"/>
-    <id>http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/</id>
-    <published>2020-04-30T03:24:22.000Z</published>
-    <updated>2020-05-05T01:28:37.189Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;统计图&quot;&gt;&lt;a href=&quot;#统计图&quot; class=&quot;headerlink&quot; title=&quot;统计图&quot;&gt;&lt;/a&gt;统计图&lt;/h1&gt;&lt;p&gt;持续补充&lt;/p&gt;
-&lt;h2 id=&quot;单变量图&quot;&gt;&lt;a href=&quot;#单变量图&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>我的stata学习</title>
-    <link href="http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/"/>
-    <id>http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/</id>
-    <published>2020-04-29T07:34:25.000Z</published>
-    <updated>2020-04-29T07:58:22.823Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;整理一下stata的笔记&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-stata&quot;&gt;&lt;code class=&quot;language-stata&quot;&gt;use
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
     
   </entry>
   
