@@ -485,7 +485,7 @@ create table
     <link href="http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/"/>
     <id>http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/</id>
     <published>2020-05-06T14:21:57.000Z</published>
-    <updated>2020-05-07T01:23:37.986Z</updated>
+    <updated>2020-05-13T13:35:21.307Z</updated>
     
     <summary type="html">
     
@@ -493,8 +493,10 @@ create table
       
         
         
-          &lt;p&gt;#爬虫管理平台&lt;/p&gt;
-&lt;p&gt;我目前的爬虫都是一个个单独的程序文件，顶多同步到github，并没有一个统一的可视化管理平台。之前看到过崔大的&lt;a href=&quot;https://github.com/Gerapy/Gerapy&quot; target=&quot;_blank&quot;
+          &lt;p&gt;目前这个功能我暂时搁置了，因为还需要花大量的时间去学习该平台的配置与使用方法，同时，还需要额外学习mongodb以及redis等数据库知识，貌似和我的需求不太符合。我完全可以用单个的爬虫程序满足我的需求。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#爬虫管理平台&lt;/p&gt;
+&lt;p&gt;我目前的爬虫都
         
       
     
