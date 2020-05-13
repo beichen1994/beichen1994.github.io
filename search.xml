@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>docker容器中安装并连接ssh</title>
+      <link href="/2020/05/13/docker-rong-qi-zhong-an-zhuang-bing-lian-jie-ssh/"/>
+      <url>/2020/05/13/docker-rong-qi-zhong-an-zhuang-bing-lian-jie-ssh/</url>
+      
+        <content type="html"><![CDATA[<h2 id="痛点"><a href="#痛点" class="headerlink" title="痛点"></a>痛点</h2><p>每次创建了一个新的容器后，如果想在本机通过ssh链接该容器，一般都需要安装ssh。特别是想用vscode去连接docker时，也必须在docker容器中安装ssh。<br>下面记录在Ubuntu的docker容器中安装ssh的过程</p><h2 id="安装ssh"><a href="#安装ssh" class="headerlink" title="安装ssh"></a>安装ssh</h2><p>首先进入容器，安装vim和openssh</p><pre><code>apt-get updateapt-get install vimapt-get install open-ssh server</code></pre><p>设置一个root密码</p><pre><code>passwd</code></pre><p>修改配置文件</p><pre><code>vim /etc/ssh/sshd_config</code></pre><p>具体的文件配置可以参考我的github仓库<a href="https://github.com/beichen1994/MyLinuxConfig" target="_blank" rel="noopener">MyLinuxConfig</a>，直接复制其中的sshd_config，然后进行替换即可。</p><p>重启ssh服务</p><pre><code>/etc/init.d/ssh restart</code></pre><p>本机连接ssh或vscode远程连接</p><pre><code>ssh root@0.0.0.0 -p 8022</code></pre><p>这个地方要注意，在创建容器时，需要指定宿主机端口8022映射到容器端口22。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/"/>
       <url>/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/</url>
