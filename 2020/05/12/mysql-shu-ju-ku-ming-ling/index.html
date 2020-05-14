@@ -8,7 +8,7 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="show databases;
+    <meta name="description" content="基础命令show databases;
 
 use company;
 show tables;
@@ -16,7 +16,7 @@ describer user;
 
 quitcreate database company;
 
-create table user(name varchar">
+create table user(name var">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -337,7 +337,7 @@ create table user(name varchar">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -492,7 +492,7 @@ create table user(name varchar">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    263
+                    339
                 </div>
                 
 
@@ -515,7 +515,7 @@ create table user(name varchar">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>show databases;
+                <h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><pre><code>show databases;
 
 use company;
 show tables;
@@ -569,7 +569,16 @@ select avg(sal),deptno from emp group by deptno having avg(sal)&gt;2000;
 
 
 order by....(asc 升序 desc 降序)
-select * from student order by id desc;</code></pre>
+select * from student order by id desc;</code></pre><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>Access denied for user ‘root’@’localhost’ (using password:YES)</p>
+<pre><code># /etc/init.d/mysql stop
+# mysqld_safe --user=mysql --skip-grant-tables --skip-networking &amp;
+# mysql -u root mysql
+mysql&gt; update mysql.user set authentication_string=password(&#39;passwd&#39;) where user=&#39;root&#39;;
+mysql&gt; FLUSH PRIVILEGES;
+mysql&gt; quit
+# /etc/init.d/mysql restart
+# mysql -uroot -p
+Enter password: &lt;输入新设的密码newpassword&gt;</code></pre>
             </div>
             <hr />
 
@@ -1061,7 +1070,7 @@ select * from student order by id desc;</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="超喜爱的《第25小时》电影台词">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="超喜爱的《第25小时》电影台词">
                         
                         <span class="card-title">超喜爱的《第25小时》电影台词</span>
                     </div>
@@ -1115,7 +1124,7 @@ Fuck you and this whole city and
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="初高中古文汇总5">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="初高中古文汇总5">
                         
                         <span class="card-title">初高中古文汇总5</span>
                     </div>
@@ -1306,7 +1315,7 @@ Fuck you and this whole city and
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">72k</span>
+            <span class="white-color">72.1k</span>
             
 
             <br>

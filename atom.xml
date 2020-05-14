@@ -73,7 +73,7 @@
     <link href="http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/"/>
     <id>http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/</id>
     <published>2020-05-12T02:28:50.000Z</published>
-    <updated>2020-05-12T02:37:26.745Z</updated>
+    <updated>2020-05-14T01:51:00.510Z</updated>
     
     <summary type="html">
     
@@ -81,15 +81,11 @@
       
         
         
-          &lt;pre&gt;&lt;code&gt;show databases;
+          &lt;h2 id=&quot;基础命令&quot;&gt;&lt;a href=&quot;#基础命令&quot; class=&quot;headerlink&quot; title=&quot;基础命令&quot;&gt;&lt;/a&gt;基础命令&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;show databases;
 
 use company;
 show tables;
-describer user;
-
-quit&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;create database company;
-
-create table
+describer
         
       
     
