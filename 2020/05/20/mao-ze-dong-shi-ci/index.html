@@ -4,13 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="机器学习之线性回归, 王玉奇的博客">
+    <meta name="keywords" content="毛泽东诗词, 王玉奇的博客">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="&amp;ensp;&amp;ensp;线性回归算法的思想也比较简单，可以用来解决二分类问题。
-&amp;ensp;&amp;ensp;我们的目标是要找到一条界线$y=ax+b$,这条界线可以尽可能的区分两种属性。
-&amp;ensp;&amp;ensp;假设在一个坐标系中有黑白两种类型">
+    <meta name="description" content="西江月.井冈山一九二八年秋
+山下旌旗在望山头鼓角相闻敌军围困万千重我自岿然不动早已森严壁垒更加众志成城黄洋界上炮声隆报道敌军宵遁
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>机器学习之线性回归 | 王玉奇的博客</title>
+    <title>毛泽东诗词 | 王玉奇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -331,13 +331,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        机器学习之线性回归
+                        毛泽东诗词
                     </div>
                 </div>
             </div>
@@ -448,8 +448,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/machine-learning/" target="_blank">
-                            <span class="chip bg-color">machine learning</span>
+                        <a href="/tags/诗词/" target="_blank">
+                            <span class="chip bg-color">诗词</span>
                         </a>
                         
                     </div>
@@ -460,8 +460,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Computer/" class="post-category" target="_blank">
-                            Computer
+                        <a href="/categories/随笔/" class="post-category" target="_blank">
+                            随笔
                         </a>
                         
                     </div>
@@ -472,7 +472,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-12-17
+                    2020-05-20
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -486,14 +486,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    924
+                    62
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
                 
@@ -509,54 +509,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>&ensp;&ensp;线性回归算法的思想也比较简单，可以用来解决二分类问题。</p>
-<p>&ensp;&ensp;我们的目标是要找到一条界线$y=ax+b$,这条界线可以尽可能的区分两种属性。</p>
-<p>&ensp;&ensp;假设在一个坐标系中有黑白两种类型的圆点，对于每一个$x^{i}$,都有一个真值$y^{i}$与之对应，但我们在寻找这条界线的过程中，对于每一个$x^{i}$,我们都有一个$y^{‘i}$，我们需要勇敢的面对这其中的损失，即$y^{i}-y^{‘i}$。</p>
-<p>&ensp;&ensp;但这个损失有正数也有负数，不利于我们进行计算。所以，对于他们之间的损失，我们需要采用$(y^{i}-y^{‘i})^2$进行统计。如果考虑所有样本，则损失函数可以表示为$\sum_{i=1}^{m}(y^{i}-y^{‘i})^2$。</p>
-<p>&ensp;&ensp;所以线性回归算法要解决的问题，就是要找到界线的系数$a$ $b$,使得$\sum_{i=1}^{m}(y^{i}-y^{‘i})^2$尽可能小，即最小化误差的平方。</p>
-<p>&ensp;&ensp;我们可以采用最小二乘法来解决这个问题，如果对这个推导不感兴趣可以直接跳过。<br>设<br>$$J(a,b)$$ </p>
-<p>$$=\sum_{i=1}^{m}(y^{i}-y^{‘i})^2$$</p>
-<p>$$=\sum_{i=1}^{m}(y^{i}-ax^{i}-b)^2$$</p>
-<p>现在我们要使得</p>
-<p>$$\frac{\partial J(a,b)}{\partial a}=0$$</p>
-<p>$$\frac{\partial J(a,b)}{\partial b}=0$$</p>
-<p>首先我们对b求导</p>
-<p>$$\frac{\partial J(a,b)}{\partial b}$$</p>
-<p>$$=\sum_{i=1}^{m}2(y^{i}-ax^{i}-b)(-1)$$</p>
-<p>$$=0$$</p>
-<p>即</p>
-<p>$$\sum_{i=1}^{m}(y^{i}-ax^{i}-b)=0$$</p>
-<p>$$\sum_{i=1}^{m}y^{i}-a\sum_{i=1}^{m}x^{i}-\sum_{i=1}^{m}b=0$$</p>
-<p>$$\sum_{i=1}^{m}y^{i}-a\sum_{i=1}^{m}x^{i}-mb=0$$</p>
-<p>$$\sum_{i=1}^{m}y^{i}-a\sum_{i=1}^{m}x^{i}=mb$$</p>
-<p>最终得到</p>
-<p>$$b=\overline{y} - a\overline{x}$$</p>
-<p>接下来我们对a求导，对a的求导比较麻烦。</p>
-<p>$$\frac{\partial J(a,b)}{\partial a}$$</p>
-<p>$$=\sum_{i=1}^{m}2(y^{i}-ax^{i}-b)(-x^{i})$$</p>
-<p>$$=0$$</p>
-<p>即</p>
-<p>$$\sum_{i=1}^{m}(y^{i}-ax^{i}-b)(x^{i})=0$$</p>
-<p>因为</p>
-<p>$$b=\overline{y}-a\overline{x}$$</p>
-<p>所以</p>
-<p>$$\sum_{i=1}^{m}(y^{i}-ax^{i}-\overline{y}+a\overline{x})(x^{i})=0$$</p>
-<p>$$\sum_{i=1}^{m}(y^{i}x^{i}-a(x^{i})^2-x^{i}\overline{y}+a\overline{x}x^{i})=0$$</p>
-<p>$$\sum_{i=1}^{m}(y^{i}x^{i}-x^{i}\overline{y})-\sum_{i=1}^{m}(a(x^{i})^2-a\overline{x}x^{i})=0$$</p>
-<p>$$\sum_{i=1}^{m}(y^{i}x^{i}-x^{i}\overline{y})= a\sum_{i=1}^{m}((x^{i})^2-\overline{x}x^{i})$$</p>
-<p>所以</p>
-<p>$$a=\frac{\sum_{i=1}^{m}(y^{i}x^{i}-x^{i}\overline{y})}{a\sum_{i=1}^{m}((x^{i})^2-\overline{x}x^{i})}$$</p>
-<p>因为<br>$$\sum_{i=1}^{m}x^{i}\overline{y}=\overline{y}\sum_{i=1}^{m}x^{i}=m\overline{y}*\overline{x}$$</p>
-<p>$$=\sum_{i=1}^{m}\overline{y}*\overline{x}= \overline{x}\sum_{i=1}^{m}y^{i}$$</p>
-<p>所以</p>
-<p>$$a=\frac{\sum_{i=1}^{m}(x^{i}y^{i}-x^{i}\overline{y}-\overline{x}y^{i}+\overline{x}*\overline{y})}{\sum_{i=1}^{m}((x^{i})^2-\overline{x}x^{i}-\overline{x}x^{i}+(\overline{x})^2)}$$</p>
-<p>$$=\frac{\sum_{i=1}^{m}(x^{i}-\overline{x})(y^{i}-\overline{y})}{\sum_{i=1}^{m}(x^{i}-\overline{x})^2}$$</p>
-<p>至此，我们已经得到了参数a、b的计算公式。</p>
-<p>$$a=\frac{\sum_{i=1}^{m}(x^{i}-\overline{x})(y^{i}-\overline{y})}{\sum_{i=1}^{m}(x^{i}-\overline{x})^2}$$</p>
-<p>$$b=\overline{y}-a\overline{x}$$</p>
-<p>&ensp;&ensp;接下来我们就可以根据数据集对参数a、b进行训练，得到我们想要的那条直线。</p>
-<p>&ensp;&ensp;当然，我们也不用非得自己编写这样一个线性回归算法，也有现成的API供我们调用，如scikit-learn中就已经包装了线性回归算法，调用起来也非常方便。但如果我们可以自己去写出这样一个线性回归算法时，我们对该算法的理解就会变得非常深。</p>
-<p>&ensp;&ensp;加油吧！</p>
+                <h2 id="西江月-井冈山"><a href="#西江月-井冈山" class="headerlink" title="西江月.井冈山"></a>西江月.井冈山</h2><p>一九二八年秋</p>
+<p>山下旌旗在望<br>山头鼓角相闻<br>敌军围困万千重<br>我自岿然不动<br>早已森严壁垒<br>更加众志成城<br>黄洋界上炮声隆<br>报道敌军宵遁</p>
 
             </div>
             <hr />
@@ -715,9 +669,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《机器学习之线性回归》
+                    《毛泽东诗词》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/12/17/ji-qi-xue-xi-zhi-xian-xing-hui-gui/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/20/mao-ze-dong-shi-ci/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王玉奇
             </a> 采用
@@ -758,7 +712,7 @@
         repo: 'beichen1994.github.io',
         owner: 'beichen1994',
         admin: "godweiyang",
-        id: '2019/12/17/ji-qi-xue-xi-zhi-xian-xing-hui-gui/',
+        id: '2020/05/20/mao-ze-dong-shi-ci/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1041,47 +995,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/12/19/quan-lian-jie-ceng-shen-jing-wang-luo/">
+                <a href="/2020/05/20/mao-ze-dong-shi-ci/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="全连接层神经网络">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="毛泽东诗词">
                         
-                        <span class="card-title">全连接层神经网络</span>
+                        <span class="card-title">毛泽东诗词</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            最简单的神经网络就是全连接层神经网络，一般分为输入层(input_nodes)，隐藏层(hidden_nodes)，输出层(outputs_nodes)。如下图所示。
-针对其中的每一个节点在处理输入值与输出值时，都会通过权重矩阵和阈值函数进
+                            西江月.井冈山一九二八年秋
+山下旌旗在望山头鼓角相闻敌军围困万千重我自岿然不动早已森严壁垒更加众志成城黄洋界上炮声隆报道敌军宵遁
+
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Computer/" class="post-category" target="_blank">
-                                    Computer
+                            <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/neural-network-and-deep-learning/" target="_blank">
-                        <span class="chip bg-color">neural network and deep learning</span>
+                    <a href="/tags/诗词/" target="_blank">
+                        <span class="chip bg-color">诗词</span>
                     </a>
                     
                 </div>
@@ -1095,24 +1052,25 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/17/ji-qi-xue-xi-zhi-knn/">
+                <a href="/2020/05/13/docker-rong-qi-zhong-an-zhuang-bing-lian-jie-ssh/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="机器学习之knn">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="docker容器中安装并连接ssh">
                         
-                        <span class="card-title">机器学习之knn</span>
+                        <span class="card-title">docker容器中安装并连接ssh</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            knn&ensp;&ensp;knn(k-nearest-neighbor)，顾名思义，就是k个距离最近的邻居，算法思想非常简单，可以用于解决分类问题。俗话说人以类聚，物以群分，如果我的邻居都喜欢安宁静谧的生活环境，那很大程度上我也是这样的
+                            痛点每次创建了一个新的容器后，如果想在本机通过ssh链接该容器，一般都需要安装ssh。特别是想用vscode去连接docker时，也必须在docker容器中安装ssh。下面记录在Ubuntu的docker容器中安装ssh的过程
+安装ssh首
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-12-17
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-13
                             </span>
                         <span class="publish-author">
                             
@@ -1129,8 +1087,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/machine-learning/" target="_blank">
-                        <span class="chip bg-color">machine learning</span>
+                    <a href="/tags/docker/" target="_blank">
+                        <span class="chip bg-color">docker</span>
                     </a>
                     
                 </div>

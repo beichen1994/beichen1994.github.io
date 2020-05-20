@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-13T09:21:27.885Z</updated>
+  <updated>2020-05-20T13:27:49.627Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>毛泽东诗词</title>
+    <link href="http://beichen1994.github.io/2020/05/20/mao-ze-dong-shi-ci/"/>
+    <id>http://beichen1994.github.io/2020/05/20/mao-ze-dong-shi-ci/</id>
+    <published>2020-05-20T12:31:10.000Z</published>
+    <updated>2020-05-20T13:27:49.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;西江月-井冈山&quot;&gt;&lt;a href=&quot;#西江月-井冈山&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="诗词" scheme="http://beichen1994.github.io/tags/%E8%AF%97%E8%AF%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>docker容器中安装并连接ssh</title>
@@ -103,7 +129,7 @@ describer
     <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-5/"/>
     <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-5/</id>
     <published>2020-05-12T02:07:26.000Z</published>
-    <updated>2020-05-12T02:13:37.347Z</updated>
+    <updated>2020-05-15T00:59:52.759Z</updated>
     
     <summary type="html">
     
@@ -117,6 +143,10 @@ describer
     
     </summary>
     
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
     
   </entry>
   
@@ -473,35 +503,6 @@ describer
     
       <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫管理平台使用</title>
-    <link href="http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/"/>
-    <id>http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/</id>
-    <published>2020-05-06T14:21:57.000Z</published>
-    <updated>2020-05-13T13:35:21.307Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;目前这个功能我暂时搁置了，因为还需要花大量的时间去学习该平台的配置与使用方法，同时，还需要额外学习mongodb以及redis等数据库知识，貌似和我的需求不太符合。我完全可以用单个的爬虫程序满足我的需求。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;#爬虫管理平台&lt;/p&gt;
-&lt;p&gt;我目前的爬虫都
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="爬虫" scheme="http://beichen1994.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
