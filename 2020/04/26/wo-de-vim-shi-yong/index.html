@@ -167,7 +167,7 @@
         <div class="logo-name">王玉奇的博客</div>
         <div class="logo-desc">
             
-            跑步让我身体自由，写作让我思维自由
+            运动让我身体自由，写作让我思维自由
             
         </div>
     </div>
@@ -446,20 +446,15 @@
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/Linux/" target="_blank">
+                            <span class="chip bg-color">Linux</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                        <a href="/categories/神器/" class="post-category" target="_blank">
-                            神器
-                        </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -481,14 +476,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    404
+                    573
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -604,7 +599,27 @@ v e l d  //进入可视化，选中e，向右移动，删除</code></pre><hr>
 wq! 存盘并强制退出
 q!  只强制退出</code></pre><p>由于我设置了配置文件，所以我的自定义退出方式如下</p>
 <pre><code>,w 保存
-,q 退出</code></pre>
+,q 退出</code></pre><ul>
+<li>插件管理</li>
+</ul>
+<p>vim 的插件让vim如虎添翼，而要管理vim插件，则需要安装vim-plug.</p>
+<p>在.vimrc文件中添加</p>
+<pre><code>call plug#begin(&#39;~/.vim/plugged&#39;)
+Plug &#39;itchyny/lightline.vim&#39;
+call plug#end()</code></pre><p>保存后</p>
+<pre><code>:PlugStatus
+
+:PlugInstall
+
+:PlugUpdate</code></pre><p>要是想要删除插件，在.vimrc中删除插件，然后</p>
+<pre><code>:PlugClean</code></pre><p>升级vim-Plug本身</p>
+<pre><code>:PlugUpgrade</code></pre><p>** YouCompleteMe插件安装</p>
+<p><a href="https://blog.csdn.net/wycgi/article/details/88372516" target="_blank" rel="noopener">https://blog.csdn.net/wycgi/article/details/88372516</a><br>在安装过程中，还需要安装go语言环境golang</p>
+<pre><code>sudo apt-get install golang&quot;</code></pre><p>也可能不需要go语言环境<br>这两个教程更靠谱一些</p>
+<p><a href="https://vimjc.com/vim-youcompleteme-install.html" target="_blank" rel="noopener">https://vimjc.com/vim-youcompleteme-install.html</a></p>
+<p><a href="https://www.cnblogs.com/YMaster/p/11209813.html" target="_blank" rel="noopener">https://www.cnblogs.com/YMaster/p/11209813.html</a></p>
+<p>具体的配置文件与插件在我的github仓库中</p>
+
             </div>
             <hr />
 
@@ -1171,15 +1186,16 @@ sudo passwd root
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/神器/" class="post-category" target="_blank">
-                                    神器
-                                </a>
-                            
-                            
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/" target="_blank">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1332,7 +1348,7 @@ sudo passwd root
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">71.9k</span>
+            <span class="white-color">72.5k</span>
             
 
             <br>

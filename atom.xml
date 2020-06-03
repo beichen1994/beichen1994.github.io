@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-05-20T13:27:49.627Z</updated>
+  <updated>2020-06-03T15:18:01.467Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>snippets初探</title>
+    <link href="http://beichen1994.github.io/2020/05/25/snippets-chu-tan/"/>
+    <id>http://beichen1994.github.io/2020/05/25/snippets-chu-tan/</id>
+    <published>2020-05-25T04:23:19.000Z</published>
+    <updated>2020-06-03T15:18:01.467Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;** 格式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;snippet TAB 关键字
+    代码片段&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;变量 ${#} 
+${1:true}
+${2:/*condition*/}
+${3:}
+${4:data}
+${5}
+${0}
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://beichen1994.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学计量学的相关概念</title>
+    <link href="http://beichen1994.github.io/2020/05/21/ke-xue-ji-liang-xue-de-xiang-guan-gai-nian/"/>
+    <id>http://beichen1994.github.io/2020/05/21/ke-xue-ji-liang-xue-de-xiang-guan-gai-nian/</id>
+    <published>2020-05-21T13:59:19.000Z</published>
+    <updated>2020-06-03T15:09:35.064Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;文献耦合&quot;&gt;&lt;a href=&quot;#文献耦合&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>毛泽东诗词</title>
@@ -450,58 +506,6 @@ describer
     </summary>
     
       <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Latex学习笔记</title>
-    <link href="http://beichen1994.github.io/2020/05/08/latex-xue-xi-bi-ji/"/>
-    <id>http://beichen1994.github.io/2020/05/08/latex-xue-xi-bi-ji/</id>
-    <published>2020-05-08T13:27:40.000Z</published>
-    <updated>2020-05-12T00:45:00.273Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;组织文档结构&quot;&gt;&lt;a href=&quot;#组织文档结构&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-      <category term="latex" scheme="http://beichen1994.github.io/tags/latex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的chrome插件vimium使用记录</title>
-    <link href="http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/"/>
-    <id>http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/</id>
-    <published>2020-05-08T06:04:53.000Z</published>
-    <updated>2020-05-08T07:06:10.001Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;如果电脑上的一切都可以用键盘来完成，那该是多么美好的一件事情啊！&lt;/p&gt;
-&lt;p&gt;至少在chrome浏览器中，可以让我们做到这一点了，那就是chrome插件，vimium。从名字来看，应该就是仿照vim来使用的。&lt;/p&gt;
-&lt;p&gt;我觉得一开始使用它，第一步还是要把它的快捷键操作
-        
-      
-    
-    </summary>
-    
-      <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
     
     
   </entry>
