@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Excel记录</title>
+      <link href="/2020/06/07/excel-ji-lu/"/>
+      <url>/2020/06/07/excel-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="界面"><a href="#界面" class="headerlink" title="界面"></a>界面</h2><p>菜单栏<br>工具栏：各个选项卡以及各种分区<br>名称框、编辑栏、<br>列标、行号、工作区、单元格<br>工作簿<br>辅助状态栏</p><h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><ul><li><p>开始</p></li><li><ul><li>字体： 类型、大小、颜色、状态</li></ul></li><li><ul><li>对齐方式：顶端底端、左对齐、居中、右对齐、文字方向、合并单元格、自动换行（多行显示文本）、强制换行（alt+enter）</li></ul></li><li><ul><li>数字：会计数字格式、日期格式、百分比样式、文本样式、增加小数点位数、减小小数点位数</li></ul></li><li><ul><li>样式：条件格式-突出显示单元格规则-其他规则</li></ul></li><li><p>公式</p></li></ul><blockquote><p>查找：ctrl+F</p></blockquote><blockquote><p>自动填充：<br>单元格右下角拖动、按住ctrl以及单元格右下角拖动<br>等差序列、等比序列、日期序列<br>开始-编辑-填充-序列,选择行、列、类型、步长值</p></blockquote><blockquote><p>数据排序<br>开始-编辑-排序和筛选-自定义排序-主要关键字-添加条件（次要关键字）</p></blockquote><blockquote><p>数据验证(快速填充所需要的数据并验证)<br>数据-数据工具-数据验证-验证条件（序列，来源：男，女）（日期，数据：介于）</p></blockquote><blockquote><p>自动筛选<br>选中数据-数据-排序和筛选-筛选-某一列，数字筛选-大于</p></blockquote><blockquote><p>高级筛选<br>在单元格设置好条件，选中数据-数据-排序和筛选-高级-列表区域，条件区域</p></blockquote><blockquote><p>分类汇总<br>先排序，数据-分级显示-分类汇总-分类字段、汇总方式、选定汇总项</p></blockquote><blockquote><p>公式：<br>单元格内首先输入’=’号，后面加公式<br>单元格位置：列标+行号<br>=C7+D7+E7+F7<br>=sum(C7:H16)<br>=average(C7:H7)<br>=max(K6:K15)<br>=min(K6:K15)<br>=count(A6:A15),数据范围必须是数字</p></blockquote><blockquote><p>数据透视表<br>基础应用<br>数据透视表中的字段组合<br>在透视表中定义公式<br>排序、筛选和切片器<br>透视表样式和条件格式<br>使用函数创建动态引用<br>创建多区域数据透视表<br>使用SQL语句专区数据<br>使用Microft Query工具<br>PowerPivot工具的使用<br>表连接</p></blockquote><blockquote><p>制图</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Excel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>snippets初探</title>
       <link href="/2020/05/25/snippets-chu-tan/"/>
       <url>/2020/05/25/snippets-chu-tan/</url>
