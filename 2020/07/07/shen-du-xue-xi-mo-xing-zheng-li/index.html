@@ -4,12 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="爬虫之9Ajax, 王玉奇的博客">
+    <meta name="keywords" content="深度学习模型整理, 王玉奇的博客">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="Ajax (Asynchronous JavaScript and XML)（异步的JavaScript和XML）不是一门编程语言，而是利用JavaScript在保证页面不刷新，页面链接不改变情况下与服务器交换数据并更新部分网页的技术
-原始">
+    <meta name="description" content="今天在知乎看到一篇介绍深度学习模型的文章,点击这里,特此进行记录
+
+1.FFNN(Feed forward neural networks,前馈神经网络)、Perceptrons
+
+2.RBF(Radial basis function,径">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>爬虫之9Ajax | 王玉奇的博客</title>
+    <title>深度学习模型整理 | 王玉奇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -330,13 +333,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        爬虫之9Ajax
+                        深度学习模型整理
                     </div>
                 </div>
             </div>
@@ -447,8 +450,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/爬虫/" target="_blank">
-                            <span class="chip bg-color">爬虫</span>
+                        <a href="/tags/neural-network-and-deep-learning/" target="_blank">
+                            <span class="chip bg-color">neural network and deep learning</span>
                         </a>
                         
                     </div>
@@ -471,7 +474,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-08
+                    2020-07-07
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -485,7 +488,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    428
+                    348
                 </div>
                 
 
@@ -508,51 +511,35 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Ajax-Asynchronous-JavaScript-and-XML-（异步的JavaScript和XML）"><a href="#Ajax-Asynchronous-JavaScript-and-XML-（异步的JavaScript和XML）" class="headerlink" title="Ajax (Asynchronous JavaScript and XML)（异步的JavaScript和XML）"></a>Ajax (Asynchronous JavaScript and XML)（异步的JavaScript和XML）</h3><p>不是一门编程语言，而是利用JavaScript在保证页面不刷新，页面链接不改变情况下与服务器交换数据并更新部分网页的技术</p>
-<p>原始HTML的某些数据通过Ajax加载，或JavaScript处理，得到了新的页面数据<br>在这个过程中，页面实际上是在后台与服务器进行了数据交换，获取数据后，利用JavaScript改变网页，这样网页内容就会更新。例如刷微博</p>
-<h4 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h4><p>发送请求<br>解析内容<br>渲染网页</p>
-<pre><code>var xmlhttp;
-
-if(window.XMLHttpRequest){
-    xmlhttp = new XMLHttpRequest();             #新建XMLHttpRequest对象
-}else{
-    xmlhttp = new ActiveObject(&#39;Microsoft.XMLHttp&#39;);
-}
-xmlhttp.onreadystatechange = function(){
-    #调用onreadystatechange属性进行监听，当服务器返回响应，对应的方法就会触发
-    if(xmlhttp.readyState==4&amp;&amp;xmlhttp.status==200){
-        documetn.getElementById(&#39;myDiv&#39;).innerHTML = xmlhttp.responseText;
-        #得到响应内容，将ID为myDiv的节点内部HTML进行替换
-    }
-}
-
-xmlhttp.open(&quot;POST&quot;,&quot;/ajax/&quot;,true);           
-xmlhttp.send()       #向服务器发送链接                     </code></pre><h4 id="Ajax分析方法"><a href="#Ajax分析方法" class="headerlink" title="Ajax分析方法"></a>Ajax分析方法</h4><ol>
-<li>查看请求</li>
-</ol>
-<p>F12开发者工具-</p>
-<ul>
-<li><p>Elements选项卡:<br>  查看网页的源代码</p>
-</li>
-<li><p>Network选项卡:<br>  页面加载过程中浏览器与服务器之间发送请求与接收响应的记录</p>
-<p>  xhr(XMLHttpRequest)类型</p>
-</li>
-<li><p>Headers选项卡:</p>
-<pre><code>  Requests Headers: X-Requested-With:XMLHttpRequest</code></pre></li>
-<li><p>Preview选项卡:</p>
-<p>  可以看到响应内容，JSON格式</p>
-</li>
-<li><p>Response选项卡：</p>
-<p>  从中观察到真实的返回数据</p>
-</li>
-</ul>
-<ol start="2">
-<li>过滤请求<br>筛选栏XHR,得到所有Ajax请求，随意点开一个条目，可以清楚看到其Request URL,Reuqest Headers,Response Headers,Response Body等</li>
-</ol>
-<h4 id="Ajax结果提取"><a href="#Ajax结果提取" class="headerlink" title="Ajax结果提取"></a>Ajax结果提取</h4><ol>
-<li>在Headers，分析请求链接，得到变化的参数</li>
-<li>在Preview，观察响应内容</li>
-</ol>
+                <p>今天在知乎看到一篇介绍深度学习模型的文章,点击<a href="https://zhuanlan.zhihu.com/p/50967380" target="_blank" rel="noopener">这里</a>,特此进行记录</p>
+<p><img src="https://s1.ax1x.com/2020/07/07/Ukt2rT.png" alt="Ukt2rT.png"></p>
+<p>1.FFNN(Feed forward neural networks,前馈神经网络)、Perceptrons</p>
+<p><img src="https://s1.ax1x.com/2020/07/07/Uktev6.png" alt="Uktev6.png"></p>
+<p>2.RBF(Radial basis function,径向基函数网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktECR.png" alt="UktECR.png"></p>
+<p>3.HN(Hopfield network,Hopfield网路)<br><a href="https://imgchr.com/i/UktZgx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/07/UktZgx.png" alt="UktZgx.png"></a></p>
+<p>4.DTMC(discrete time Markov Chain,离散时间马尔科夫链)<br><img src="https://s1.ax1x.com/2020/07/07/UktV81.png" alt="UktV81.png"></p>
+<p>5.BM(Boltzamnn machines,玻尔兹曼机)<br><img src="https://s1.ax1x.com/2020/07/07/UktnKK.png" alt="UktnKK.png"></p>
+<p>6.RBM(Restricted Boltzmann machines,受限玻尔兹曼机)<br><img src="https://s1.ax1x.com/2020/07/07/UktuDO.png" alt="UktuDO.png"></p>
+<p>7.AE(Auto encoders,自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktQVe.png" alt="UktQVe.png"></p>
+<p>8.SAE(Sparse Auto encoders,稀疏自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktKbD.png" alt="UktKbD.png"></p>
+<p>9.VAE(Variational Auto encoders,变分自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktlUH.png" alt="UktlUH.png"></p>
+<p>10.DAE(Denoising Auto Encoders,去噪自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/Ukt15d.png" alt="Ukt15d.png"></p>
+<p>11.DBN(Deep belief networks,深度信念网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktJ2t.png" alt="UktJ2t.png"></p>
+<p>12.DCNN/CNN(Deep convolutional neural network,深度卷积神经网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktYxP.png" alt="UktYxP.png"></p>
+<p>13.DN(Deconvolutional networks,去卷积网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktG8I.png" alt="UktG8I.png"></p>
+<p>14.DCIGN(Deep convolutional inversae graphics networks，深度卷积逆向图网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktNKf.png" alt="UktNKf.png"></p>
+<p>15.GAN(Generative adversarial networks,生成对抗网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktaqS.png" alt="UktaqS.png"></p>
+<p>16.RNN(Recurrent neural networks,循环神经网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktUr8.png" alt="UktUr8.png"></p>
+<p>17.LSTM(Long/short term memory,长短期记忆网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktwVg.png" alt="UktwVg.png"></p>
+<p>18.GRU(Gated recurrent units,门循环单元）<br><img src="https://s1.ax1x.com/2020/07/07/Ukt0aQ.png" alt="Ukt0aQ.png"></p>
+<p>19.NTM(Neural Turing machines,神经图灵机)<br><img src="https://s1.ax1x.com/2020/07/07/UktrPs.png" alt="UktrPs.png"></p>
+<p>20.BiRNN,BiLSTM,BiGRU(Bidirectional recurrent nerual networks,双向循环神经网络,bidirectional long/short term memory networks,双向长短期记忆网络,bidirectional gated recurrent units,双向门控制单元)</p>
+<p>21.DRN(Deep residual networks,深度参差网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktB5j.png" alt="UktB5j.png"></p>
+<p>22.ESN(Echo state networks,回声状态网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktsGn.png" alt="UktsGn.png"></p>
+<p>23.ELM(Extreme learning machines,极限学习机)<br><img src="https://s1.ax1x.com/2020/07/07/Ukty2q.png" alt="Ukty2q.png"></p>
+<p>24.LSM(Liquid state machines,液态机)<br><img src="https://s1.ax1x.com/2020/07/07/UktRqU.png" alt="UktRqU.png"></p>
+<p>25.SVM(Support vector machines,支持向量机)<br><img src="https://s1.ax1x.com/2020/07/07/Ukt6x0.png" alt="Ukt6x0.png"></p>
+<p>26.KN,SOM(Kohonen networks,Kohonen网络,self organising map)<br><img src="https://s1.ax1x.com/2020/07/07/UktgMV.png" alt="UktgMV.png"></p>
 
             </div>
             <hr />
@@ -711,9 +698,9 @@ xmlhttp.send()       #向服务器发送链接                     </code></pre>
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《爬虫之9Ajax》
+                    《深度学习模型整理》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/02/08/pa-chong-zhi-9ajax/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王玉奇
             </a> 采用
@@ -754,7 +741,7 @@ xmlhttp.send()       #向服务器发送链接                     </code></pre>
         repo: 'beichen1994.github.io',
         owner: 'beichen1994',
         admin: "godweiyang",
-        id: '2020/02/08/pa-chong-zhi-9ajax/',
+        id: '2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1037,79 +1024,33 @@ xmlhttp.send()       #向服务器发送链接                     </code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/08/pa-chong-zhi-dai-10-dai-li/">
+                <a href="/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="爬虫之代10代理">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="深度学习模型整理">
                         
-                        <span class="card-title">爬虫之代10代理</span>
+                        <span class="card-title">深度学习模型整理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基本原理服务器检测的是某个IP单位时间的请求次数代理即代理服务器(proxy server)本机不是直接向web服务器发送请求，而是向代理服务器发送请求，再转发给服务器。并把服务器的响应转发给本机
-作用1.突破自身IP限制2.访问一些单位或
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-08
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Computer/" class="post-category" target="_blank">
-                                    Computer
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/爬虫/" target="_blank">
-                        <span class="chip bg-color">爬虫</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/02/08/pa-chong-zhi-8-duo-jin-cheng/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="爬虫之8多进程">
-                        
-                        <span class="card-title">爬虫之8多进程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            多进程Unix/Linux操作系统提供了一个fork()系统调用，它非常特殊。普通的函数调用，调用一次，返回一次， 但是fork()调用一次，返回两次
-因为操作系统自动把当前进程（称为父进程）复制了一份（称为子进程），然后，分别在父进程和子
+                            今天在知乎看到一篇介绍深度学习模型的文章,点击这里,特此进行记录
+
+1.FFNN(Feed forward neural networks,前馈神经网络)、Perceptrons
+
+2.RBF(Radial basis function,径
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-02-08
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-07
                             </span>
                         <span class="publish-author">
                             
@@ -1123,11 +1064,63 @@ xmlhttp.send()       #向服务器发送链接                     </code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/爬虫/" target="_blank">
-                        <span class="chip bg-color">爬虫</span>
+                    <a href="/tags/neural-network-and-deep-learning/" target="_blank">
+                        <span class="chip bg-color">neural network and deep learning</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/07/excel-ji-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Excel记录">
+                        
+                        <span class="card-title">Excel记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            界面菜单栏工具栏：各个选项卡以及各种分区名称框、编辑栏、列标、行号、工作区、单元格工作簿辅助状态栏
+常用
+开始
+
+
+字体： 类型、大小、颜色、状态
+
+
+
+对齐方式：顶端底端、左对齐、居中、右对齐、文字方向、合并单元格、自动换行（多行显示文本
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-07
+                            </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Excel/" target="_blank">
+                        <span class="chip bg-color">Excel</span>
                     </a>
                     
                 </div>

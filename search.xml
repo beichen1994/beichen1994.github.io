@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>深度学习模型整理</title>
+      <link href="/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/"/>
+      <url>/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/</url>
+      
+        <content type="html"><![CDATA[<p>今天在知乎看到一篇介绍深度学习模型的文章,点击<a href="https://zhuanlan.zhihu.com/p/50967380" target="_blank" rel="noopener">这里</a>,特此进行记录</p><p><img src="https://s1.ax1x.com/2020/07/07/Ukt2rT.png" alt="Ukt2rT.png"></p><p>1.FFNN(Feed forward neural networks,前馈神经网络)、Perceptrons</p><p><img src="https://s1.ax1x.com/2020/07/07/Uktev6.png" alt="Uktev6.png"></p><p>2.RBF(Radial basis function,径向基函数网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktECR.png" alt="UktECR.png"></p><p>3.HN(Hopfield network,Hopfield网路)<br><a href="https://imgchr.com/i/UktZgx" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2020/07/07/UktZgx.png" alt="UktZgx.png"></a></p><p>4.DTMC(discrete time Markov Chain,离散时间马尔科夫链)<br><img src="https://s1.ax1x.com/2020/07/07/UktV81.png" alt="UktV81.png"></p><p>5.BM(Boltzamnn machines,玻尔兹曼机)<br><img src="https://s1.ax1x.com/2020/07/07/UktnKK.png" alt="UktnKK.png"></p><p>6.RBM(Restricted Boltzmann machines,受限玻尔兹曼机)<br><img src="https://s1.ax1x.com/2020/07/07/UktuDO.png" alt="UktuDO.png"></p><p>7.AE(Auto encoders,自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktQVe.png" alt="UktQVe.png"></p><p>8.SAE(Sparse Auto encoders,稀疏自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktKbD.png" alt="UktKbD.png"></p><p>9.VAE(Variational Auto encoders,变分自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/UktlUH.png" alt="UktlUH.png"></p><p>10.DAE(Denoising Auto Encoders,去噪自动编码)<br><img src="https://s1.ax1x.com/2020/07/07/Ukt15d.png" alt="Ukt15d.png"></p><p>11.DBN(Deep belief networks,深度信念网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktJ2t.png" alt="UktJ2t.png"></p><p>12.DCNN/CNN(Deep convolutional neural network,深度卷积神经网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktYxP.png" alt="UktYxP.png"></p><p>13.DN(Deconvolutional networks,去卷积网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktG8I.png" alt="UktG8I.png"></p><p>14.DCIGN(Deep convolutional inversae graphics networks，深度卷积逆向图网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktNKf.png" alt="UktNKf.png"></p><p>15.GAN(Generative adversarial networks,生成对抗网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktaqS.png" alt="UktaqS.png"></p><p>16.RNN(Recurrent neural networks,循环神经网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktUr8.png" alt="UktUr8.png"></p><p>17.LSTM(Long/short term memory,长短期记忆网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktwVg.png" alt="UktwVg.png"></p><p>18.GRU(Gated recurrent units,门循环单元）<br><img src="https://s1.ax1x.com/2020/07/07/Ukt0aQ.png" alt="Ukt0aQ.png"></p><p>19.NTM(Neural Turing machines,神经图灵机)<br><img src="https://s1.ax1x.com/2020/07/07/UktrPs.png" alt="UktrPs.png"></p><p>20.BiRNN,BiLSTM,BiGRU(Bidirectional recurrent nerual networks,双向循环神经网络,bidirectional long/short term memory networks,双向长短期记忆网络,bidirectional gated recurrent units,双向门控制单元)</p><p>21.DRN(Deep residual networks,深度参差网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktB5j.png" alt="UktB5j.png"></p><p>22.ESN(Echo state networks,回声状态网络)<br><img src="https://s1.ax1x.com/2020/07/07/UktsGn.png" alt="UktsGn.png"></p><p>23.ELM(Extreme learning machines,极限学习机)<br><img src="https://s1.ax1x.com/2020/07/07/Ukty2q.png" alt="Ukty2q.png"></p><p>24.LSM(Liquid state machines,液态机)<br><img src="https://s1.ax1x.com/2020/07/07/UktRqU.png" alt="UktRqU.png"></p><p>25.SVM(Support vector machines,支持向量机)<br><img src="https://s1.ax1x.com/2020/07/07/Ukt6x0.png" alt="Ukt6x0.png"></p><p>26.KN,SOM(Kohonen networks,Kohonen网络,self organising map)<br><img src="https://s1.ax1x.com/2020/07/07/UktgMV.png" alt="UktgMV.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Computer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> neural network and deep learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Excel记录</title>
       <link href="/2020/06/07/excel-ji-lu/"/>
       <url>/2020/06/07/excel-ji-lu/</url>
@@ -798,7 +823,7 @@
       <link href="/2020/04/27/wo-de-conda-shi-yong/"/>
       <url>/2020/04/27/wo-de-conda-shi-yong/</url>
       
-        <content type="html"><![CDATA[<p>conda是目前最流行的Python环境管理工具。conda的使用还是比较简单的，没有什么难度，只要熟悉相关的命令，便可用起来非常顺手。</p><p>我在使用conda过程中，偶尔会去百度conda的相关命令，因此在这里记录下我常用的conda命令。</p><pre><code>conda list查看安装了哪些包conda env listconda info -e查看当前存在哪些虚拟环境conda update conda检查更新当前condaconda create -n your_env_name python=X.X（2.7、3.6等)创建python版本为X.X、名字为your_env_name的虚拟环境python --version可以检查当前python的版本source activate your_env_name(虚拟环境名称)conda install -n your_env_name [package]即可安装package到your_env_name中source deactivateconda deactivate退出python虚拟环境conda remove -n your_env_name(虚拟环境名称) --all删除虚拟环境conda remove --name your_env_name  package_name 、删除虚拟环境中的包conda create -n tf --clone rcnn克隆虚拟环境rcnn到tfconda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --set show_channel_urls yes设置清华镜像源conda config --show channels显示所有的镜像下载通道conda config --remove channels &#39;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/＇删除镜像conda install nb_conda_kernels在jupyternotebook安装虚拟环境conda config --remove-key channels恢复到默认源cd ~vim .bashrcexport PYTHONIOENCODING=utf-8source .bashrc设置python输入输出环境变量</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>conda是目前最流行的Python环境管理工具。conda的使用还是比较简单的，没有什么难度，只要熟悉相关的命令，便可用起来非常顺手。</p><p>我在使用conda过程中，偶尔会去百度conda的相关命令，因此在这里记录下我常用的conda命令。</p><pre><code>conda list查看安装了哪些包conda env listconda info -e查看当前存在哪些虚拟环境conda update conda检查更新当前condaconda create -n your_env_name python=X.X（2.7、3.6等)创建python版本为X.X、名字为your_env_name的虚拟环境python --version可以检查当前python的版本source activate your_env_name(虚拟环境名称)conda install -n your_env_name [package]即可安装package到your_env_name中source deactivateconda deactivate退出python虚拟环境conda remove -n your_env_name(虚拟环境名称) --all删除虚拟环境conda remove --name your_env_name  package_name 、删除虚拟环境中的包conda create -n tf --clone rcnn克隆虚拟环境rcnn到tfconda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/peterjc123/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --set show_channel_urls yes设置清华镜像源conda config --show channels显示所有的镜像下载通道conda config --remove channels &#39;https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/＇删除镜像conda install nb_conda_kernels在jupyternotebook安装虚拟环境conda config --remove-key channels恢复到默认源cd ~vim .bashrcexport PYTHONIOENCODING=utf-8source .bashrc设置python输入输出环境变量pip freeze &gt;requirement.txt进入虚拟环境后,导出虚拟环境中的包信息</code></pre>]]></content>
       
       
       <categories>

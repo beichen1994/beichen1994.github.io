@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-06-07T05:46:56.998Z</updated>
+  <updated>2020-07-07T07:17:26.503Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深度学习模型整理</title>
+    <link href="http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/"/>
+    <id>http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/</id>
+    <published>2020-07-07T05:59:45.000Z</published>
+    <updated>2020-07-07T07:17:26.503Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天在知乎看到一篇介绍深度学习模型的文章,点击&lt;a href=&quot;https://zhuanlan.zhihu.com/p/50967380&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;,特此进行记录&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>Excel记录</title>
@@ -481,31 +508,6 @@ describer
     
     
       <category term="数学建模" scheme="http://beichen1994.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>比较有趣的&#39;美学&#39;作业</title>
-    <link href="http://beichen1994.github.io/2020/05/10/bi-jiao-you-qu-de-mei-xue-zuo-ye/"/>
-    <id>http://beichen1994.github.io/2020/05/10/bi-jiao-you-qu-de-mei-xue-zuo-ye/</id>
-    <published>2020-05-10T07:27:22.000Z</published>
-    <updated>2020-05-12T01:40:06.627Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;突然翻到了自己大一时上的选修课“美学”作业，是要写一份对这个课程的认识。现在重新读来感觉还很有意思。&lt;/p&gt;
-&lt;h2 id=&quot;美学的学习&quot;&gt;&lt;a href=&quot;#美学的学习&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
     
   </entry>
   
