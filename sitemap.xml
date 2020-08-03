@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/</loc>
+    
+    <lastmod>2020-08-03T14:57:22.096Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/</loc>
+    
+    <lastmod>2020-08-03T14:56:29.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/</loc>
     
     <lastmod>2020-08-03T11:28:49.501Z</lastmod>
@@ -243,20 +257,6 @@
     <loc>http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/</loc>
     
     <lastmod>2020-05-05T14:49:56.971Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/</loc>
-    
-    <lastmod>2020-05-05T01:28:37.189Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/</loc>
-    
-    <lastmod>2020-05-01T01:05:04.291Z</lastmod>
     
   </url>
   

@@ -4,13 +4,15 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="我的可视化笔记1, 王玉奇的博客">
+    <meta name="keywords" content="线性回归从零开始实现(Pytorch), 王玉奇的博客">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。
-导入绘图环境from matplotlib import pyplot as plt
-plt.rcParams[&#39;f">
+    <meta name="description" content="使用Pytorch进行线性回归的训练%matplotlib inline
+import torch
+from IPython import display
+from matplotlib import pyplot as plt
+impor">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@ plt.rcParams[&#39;f">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>我的可视化笔记1 | 王玉奇的博客</title>
+    <title>线性回归从零开始实现(Pytorch) | 王玉奇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -331,13 +333,13 @@ plt.rcParams[&#39;f">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        我的可视化笔记1
+                        线性回归从零开始实现(Pytorch)
                     </div>
                 </div>
             </div>
@@ -447,7 +449,11 @@ plt.rcParams[&#39;f">
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/neural-network-and-deep-learning/" target="_blank">
+                            <span class="chip bg-color">neural network and deep learning</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -456,8 +462,8 @@ plt.rcParams[&#39;f">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/科研/" class="post-category" target="_blank">
-                            科研
+                        <a href="/categories/Computer/" class="post-category" target="_blank">
+                            Computer
                         </a>
                         
                     </div>
@@ -468,7 +474,7 @@ plt.rcParams[&#39;f">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-08-03
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -482,14 +488,14 @@ plt.rcParams[&#39;f">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    524
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
                 
@@ -505,106 +511,125 @@ plt.rcParams[&#39;f">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Python中的matplotlib库是一个强大的可视化工具，本篇将持续对matplotlib以及相关的库学习做一些笔记。</p>
-<h2 id="导入绘图环境"><a href="#导入绘图环境" class="headerlink" title="导入绘图环境"></a>导入绘图环境</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
-plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'SimHei'</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'中文字体'</span><span class="token punctuation">)</span>
+                <h1 id="使用Pytorch进行线性回归的训练"><a href="#使用Pytorch进行线性回归的训练" class="headerlink" title="使用Pytorch进行线性回归的训练"></a>使用Pytorch进行线性回归的训练</h1><pre class="line-numbers language-python"><code class="language-python"><span class="token operator">%</span>matplotlib inline
+<span class="token keyword">import</span> torch
+<span class="token keyword">from</span> IPython <span class="token keyword">import</span> display
+<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> random<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="生成数据集"><a href="#生成数据集" class="headerlink" title="生成数据集"></a>生成数据集</h1><pre class="line-numbers language-python"><code class="language-python">num_inputs <span class="token operator">=</span> <span class="token number">2</span>
+num_examples <span class="token operator">=</span> <span class="token number">1000</span>
+true_w <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3.4</span><span class="token punctuation">]</span>
+true_b <span class="token operator">=</span> <span class="token number">4.2</span>
+features <span class="token operator">=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>num_examples<span class="token punctuation">,</span> num_inputs<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float<span class="token punctuation">)</span>
+labels <span class="token operator">=</span> true_w<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> features<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">+</span> true_w<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">*</span> features<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> true_b
+labels <span class="token operator">+=</span> torch<span class="token punctuation">.</span>tensor<span class="token punctuation">(</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>normal<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.01</span><span class="token punctuation">,</span> size<span class="token operator">=</span>labels<span class="token punctuation">.</span>size<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> dtype<span class="token operator">=</span>torch<span class="token punctuation">.</span>float<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h1><p>PyTorch提供了data包来读取数据。由于data常用作变量名，我们将导入的data模块用Data代替</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token punctuation">.</span>utils<span class="token punctuation">.</span>data <span class="token keyword">as</span> Data
 
-<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
-sns<span class="token punctuation">.</span>set<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#加载seaborn默认的格式设定</span>
+batch_size <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token comment" spellcheck="true"># 将训练数据的特征和标签组合</span>
+dataset <span class="token operator">=</span> Data<span class="token punctuation">.</span>TensorDataset<span class="token punctuation">(</span>features<span class="token punctuation">,</span> labels<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 随机读取小批量</span>
+data_iter <span class="token operator">=</span> Data<span class="token punctuation">.</span>DataLoader<span class="token punctuation">(</span>dataset<span class="token punctuation">,</span> batch_size<span class="token punctuation">,</span> shuffle<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> X<span class="token punctuation">,</span> y <span class="token keyword">in</span> data_iter<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+    <span class="token keyword">break</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="定义模型"><a href="#定义模型" class="headerlink" title="定义模型"></a>定义模型</h1><p>PyTorch提供了大量预定义的层，这使我们只需关注使用哪些层来构造模型。下面将介绍如何使用PyTorch更简洁地定义线性回归。</p>
+<p>首先，导入torch.nn模块。实际上，“nn”是neural networks（神经网络）的缩写,该模块定义了大量神经网络的层</p>
+<p>nn的核心数据结构是Module，它是一个抽象概念，既可以表示神经网络中的某个层（layer），也可以表示一个包含很多层的神经网络</p>
+<p>在实际使用中，最常见的做法是继承nn.Module，撰写自己的网络/层。一个nn.Module实例应该包含一些层以及返回输出的前向传播（forward）方法</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn <span class="token keyword">as</span> nn
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>nn<span class="token punctuation">.</span>functional <span class="token keyword">as</span> F
+<span class="token keyword">class</span> <span class="token class-name">LinearNet</span><span class="token punctuation">(</span>nn<span class="token punctuation">.</span>Module<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n_feature<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        super<span class="token punctuation">(</span>LinearNet<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>linear <span class="token operator">=</span> nn<span class="token punctuation">.</span>Linear<span class="token punctuation">(</span>n_feature<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># forward 定义前向传播</span>
+    <span class="token keyword">def</span> <span class="token function">forward</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        y <span class="token operator">=</span> self<span class="token punctuation">.</span>linear<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> y
 
-<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
-<span class="token keyword">import</span> os<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><a href="https://www.jianshu.com/p/d20a0971756b" target="_blank" rel="noopener">linux中matplotlib无法显示中文解决办法</a></p>
-<h2 id="图形对象"><a href="#图形对象" class="headerlink" title="图形对象"></a>图形对象</h2><p><img src="https://s1.ax1x.com/2020/04/29/JTDsv6.png" alt="JTDsv6.png"></p>
-<h3 id="创建Figure对象"><a href="#创建Figure对象" class="headerlink" title="创建Figure对象"></a>创建Figure对象</h3><p>matplotlib首先创建fig对象，然后基于fig对象绘图</p>
-<pre class="line-numbers language-python"><code class="language-python">matploblib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>
-<span class="token number">1</span><span class="token punctuation">.</span> num<span class="token punctuation">:</span> 图形ID
-<span class="token number">2</span><span class="token punctuation">.</span> figsize：图形长宽
-<span class="token number">3</span><span class="token punctuation">.</span> dpi：图形分辨率
-<span class="token number">4</span><span class="token punctuation">.</span> facecolor：背景色
-<span class="token number">5</span><span class="token punctuation">.</span> edgecolor：边框色
-<span class="token number">6</span><span class="token punctuation">.</span> frameon<span class="token operator">=</span><span class="token boolean">True</span>：是否绘制图形外框架
-<span class="token number">7</span><span class="token punctuation">.</span> FigureClass：使用自定义的matploblib<span class="token punctuation">.</span>figure<span class="token punctuation">.</span>Figure类
-<span class="token number">8</span><span class="token punctuation">.</span> clear<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">:</span>是否清除原有的Fig对象
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="调用plot"><a href="#调用plot" class="headerlink" title="调用plot()"></a>调用plot()</h3><p>plot()在Axes(子图)上绘图，如果没有指定Axes对象，则会创建一个布满整个Figure对象的Axes对象</p>
-<pre class="line-numbers language-python"><code class="language-python">matploblib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>
-<span class="token number">1</span><span class="token punctuation">.</span> x<span class="token punctuation">:</span>X轴对应数据，缺省为<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>N<span class="token number">-1</span><span class="token punctuation">]</span>
-<span class="token number">2</span><span class="token punctuation">.</span> y<span class="token punctuation">:</span>Y轴对应数据
-<span class="token number">3</span><span class="token punctuation">.</span> data<span class="token punctuation">:</span>列变量所对应的数据框名称
-<span class="token number">4</span><span class="token punctuation">.</span> fmt<span class="token punctuation">:</span><span class="token punctuation">[</span>color<span class="token punctuation">]</span><span class="token punctuation">[</span>marker<span class="token punctuation">]</span><span class="token punctuation">[</span>line<span class="token punctuation">]</span>的格式
-<span class="token number">5</span><span class="token punctuation">.</span> label<span class="token punctuation">:</span>曲线的标签名，可以用latex公式
-<span class="token number">6</span><span class="token punctuation">.</span> color<span class="token punctuation">:</span>曲线的颜色
-<span class="token number">7</span><span class="token punctuation">.</span> linewidth<span class="token punctuation">:</span>曲线宽度
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token punctuation">[</span>color<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'b'</span> <span class="token string">'g'</span> <span class="token string">'r'</span> <span class="token string">'c'</span> <span class="token string">'m'</span> <span class="token string">'y'</span> <span class="token string">'k'</span> <span class="token string">'w'</span>
+net <span class="token operator">=</span> LinearNet<span class="token punctuation">(</span>num_inputs<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>net<span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 使用print可以打印出网络的结构</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#super()是用于调用父类(超类)的一个方法</span>
+<span class="token keyword">class</span> <span class="token class-name">FooChild</span><span class="token punctuation">(</span>FooParent<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># super(FooChild,self) 首先找到 FooChild 的父类（就是类 FooParent）</span>
+        <span class="token comment" spellcheck="true"># 将类 FooChild 的对象转换为类 FooParent 的对象</span>
+        super<span class="token punctuation">(</span>FooChild<span class="token punctuation">,</span>self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token punctuation">)</span>    
+        <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">'Child'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>我们还可以用nn.Sequential来更加方便地搭建网络<br>Sequential是一个有序的容器，网络层将按照在传入Sequential的顺序依次被添加到计算图中</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 写法一</span>
+net <span class="token operator">=</span> nn<span class="token punctuation">.</span>Sequential<span class="token punctuation">(</span>
+    nn<span class="token punctuation">.</span>Linear<span class="token punctuation">(</span>num_inputs<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true"># 此处还可以传入其他层</span>
+    <span class="token punctuation">)</span>
 
-<span class="token punctuation">[</span>marker<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'.'</span> <span class="token string">','</span> <span class="token string">'o'</span> <span class="token string">'v'</span> <span class="token string">'1'</span> <span class="token string">'2'</span> <span class="token string">'3'</span> <span class="token string">'4'</span>
+<span class="token comment" spellcheck="true"># 写法二</span>
+net <span class="token operator">=</span> nn<span class="token punctuation">.</span>Sequential<span class="token punctuation">(</span><span class="token punctuation">)</span>
+net<span class="token punctuation">.</span>add_module<span class="token punctuation">(</span><span class="token string">'linear'</span><span class="token punctuation">,</span> nn<span class="token punctuation">.</span>Linear<span class="token punctuation">(</span>num_inputs<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># net.add_module ......</span>
 
-<span class="token punctuation">[</span>line<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">'-'</span> <span class="token string">'--'</span> <span class="token string">'-.'</span> <span class="token string">':'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>设定当前Axes对象的属性</p>
-<pre class="line-numbers language-python"><code class="language-python">xlim<span class="token operator">/</span>ylim：设置X轴Y轴的刻度范围
-xlabel<span class="token operator">/</span>ylabel<span class="token punctuation">:</span>X轴Y轴的标题文字
-clabel：为轮廓线设置标题文字
-title：子图的标题
-legend：显示图示
-annotate：绘制图形标注
-axhspan：回执垂直和水平色块
-fill：填充区域<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="柱状-简单条图"><a href="#柱状-简单条图" class="headerlink" title="柱状(简单条图)"></a>柱状(简单条图)</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>
+<span class="token comment" spellcheck="true"># 写法三</span>
+<span class="token keyword">from</span> collections <span class="token keyword">import</span> OrderedDict
+net <span class="token operator">=</span> nn<span class="token punctuation">.</span>Sequential<span class="token punctuation">(</span>OrderedDict<span class="token punctuation">(</span><span class="token punctuation">[</span>
+          <span class="token punctuation">(</span><span class="token string">'linear'</span><span class="token punctuation">,</span> nn<span class="token punctuation">.</span>Linear<span class="token punctuation">(</span>num_inputs<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+          <span class="token comment" spellcheck="true"># ......</span>
+        <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>barh<span class="token punctuation">(</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>net<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>net<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可以通过net.parameters()来查看模型所有的可学习参数，此函数将返回一个生成器</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">for</span> param <span class="token keyword">in</span> net<span class="token punctuation">.</span>parameters<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h1 id="初始化模型参数"><a href="#初始化模型参数" class="headerlink" title="初始化模型参数"></a>初始化模型参数</h1><p>PyTorch在init模块中提供了多种参数初始化方法。这里的init是initializer的缩写形式。</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> torch<span class="token punctuation">.</span>nn <span class="token keyword">import</span> init
+<span class="token comment" spellcheck="true">#将权重参数每个元素初始化为随机采样于均值为0、标准差为0.01的正态分布</span>
+init<span class="token punctuation">.</span>normal_<span class="token punctuation">(</span>net<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>weight<span class="token punctuation">,</span> mean<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> std<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">#偏差会初始化为零。</span>
+init<span class="token punctuation">.</span>constant_<span class="token punctuation">(</span>net<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>bias<span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 也可以直接修改bias的data: net[0].bias.data.fill_(0)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="定义损失函数"><a href="#定义损失函数" class="headerlink" title="定义损失函数"></a>定义损失函数</h1><p>PyTorch在nn模块中提供了各种损失函数<br>这些损失函数可看作是一种特殊的层</p>
+<pre class="line-numbers language-python"><code class="language-python">loss <span class="token operator">=</span> nn<span class="token punctuation">.</span>MSELoss<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="定义优化算法"><a href="#定义优化算法" class="headerlink" title="定义优化算法"></a>定义优化算法</h1><p>torch.optim模块提供了很多常用的优化算法比如SGD、Adam和RMSProp等</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#下面我们创建一个用于优化net所有参数的优化器实例，并指定学习率为0.03的小批量随机梯度下降（SGD）为优化算法</span>
+<span class="token keyword">import</span> torch<span class="token punctuation">.</span>optim <span class="token keyword">as</span> optim
 
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="水平直方图"><a href="#水平直方图" class="headerlink" title="水平直方图"></a>水平直方图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>broken_barh<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="柱形图"><a href="#柱形图" class="headerlink" title="柱形图"></a>柱形图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="水平柱状图"><a href="#水平柱状图" class="headerlink" title="水平柱状图"></a>水平柱状图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>hist2d<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="饼状图"><a href="#饼状图" class="headerlink" title="饼状图"></a>饼状图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>pie<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="等高线图"><a href="#等高线图" class="headerlink" title="等高线图"></a>等高线图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>contour<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="误差线"><a href="#误差线" class="headerlink" title="误差线"></a>误差线</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>errorbar<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="六边形图案"><a href="#六边形图案" class="headerlink" title="六边形图案"></a>六边形图案</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>hexbin<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="以图形显示"><a href="#以图形显示" class="headerlink" title="以图形显示"></a>以图形显示</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="量场图"><a href="#量场图" class="headerlink" title="量场图"></a>量场图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>quivet<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="电子波谱图"><a href="#电子波谱图" class="headerlink" title="电子波谱图"></a>电子波谱图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>angle_spectrum<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="光谱图"><a href="#光谱图" class="headerlink" title="光谱图"></a>光谱图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>specgram<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="绘制子图"><a href="#绘制子图" class="headerlink" title="绘制子图"></a>绘制子图</h3><pre class="line-numbers language-python"><code class="language-python">matplotlib<span class="token punctuation">.</span>pyplot<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span>
-
-<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="显示图形、保存图形"><a href="#显示图形、保存图形" class="headerlink" title="显示图形、保存图形"></a>显示图形、保存图形</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token operator">%</span>matplotlib qt5
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-
-<span class="token operator">%</span>matplotlib inline
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'test.png'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+optimizer <span class="token operator">=</span> optim<span class="token punctuation">.</span>SGD<span class="token punctuation">(</span>net<span class="token punctuation">.</span>parameters<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> lr<span class="token operator">=</span><span class="token number">0.03</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>optimizer<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">optimizer <span class="token operator">=</span>optim<span class="token punctuation">.</span>SGD<span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token comment" spellcheck="true"># 如果对某个参数不指定学习率，就使用最外层的默认学习率</span>
+                <span class="token punctuation">{</span><span class="token string">'params'</span><span class="token punctuation">:</span> net<span class="token punctuation">.</span>subnet1<span class="token punctuation">.</span>parameters<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true"># lr=0.03</span>
+                <span class="token punctuation">{</span><span class="token string">'params'</span><span class="token punctuation">:</span> net<span class="token punctuation">.</span>subnet2<span class="token punctuation">.</span>parameters<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'lr'</span><span class="token punctuation">:</span> <span class="token number">0.01</span><span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span> lr<span class="token operator">=</span><span class="token number">0.03</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 调整学习率</span>
+<span class="token keyword">for</span> param_group <span class="token keyword">in</span> optimizer<span class="token punctuation">.</span>param_groups<span class="token punctuation">:</span>
+    param_group<span class="token punctuation">[</span><span class="token string">'lr'</span><span class="token punctuation">]</span> <span class="token operator">*=</span> <span class="token number">0.1</span> <span class="token comment" spellcheck="true"># 学习率为之前的0.1倍</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h1 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h1><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#我们通过调用optimizer实例的step函数来迭代模型参数。</span>
+<span class="token comment" spellcheck="true">#按照小批量随机梯度下降的定义，我们在step函数中指明批量大小，从而对批量中样本梯度求平均</span>
+num_epochs <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token keyword">for</span> epoch <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> num_epochs <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> X<span class="token punctuation">,</span> y <span class="token keyword">in</span> data_iter<span class="token punctuation">:</span>
+        output <span class="token operator">=</span> net<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+        l <span class="token operator">=</span> loss<span class="token punctuation">(</span>output<span class="token punctuation">,</span> y<span class="token punctuation">.</span>view<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        optimizer<span class="token punctuation">.</span>zero_grad<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true"># 梯度清零，等价于net.zero_grad()</span>
+        l<span class="token punctuation">.</span>backward<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        optimizer<span class="token punctuation">.</span>step<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'epoch %d, loss: %f'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>epoch<span class="token punctuation">,</span> l<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#我们从net获得需要的层，并访问其权重（weight）和偏差（bias）。学到的参数和真实的参数很接近。</span>
+dense <span class="token operator">=</span> net<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>true_w<span class="token punctuation">,</span> dense<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>true_b<span class="token punctuation">,</span> dense<span class="token punctuation">.</span>bias<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr />
@@ -763,9 +788,9 @@ plt<span class="token punctuation">.</span>savefig<span class="token punctuation
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《我的可视化笔记1》
+                    《线性回归从零开始实现(Pytorch)》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/" property="cc:attributionName"
                rel="cc:attributionURL">
                 王玉奇
             </a> 采用
@@ -806,7 +831,7 @@ plt<span class="token punctuation">.</span>savefig<span class="token punctuation
         repo: 'beichen1994.github.io',
         owner: 'beichen1994',
         admin: "godweiyang",
-        id: '2020/04/29/wo-de-ke-shi-hua-bi-ji-1/',
+        id: '2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1093,50 +1118,48 @@ plt<span class="token punctuation">.</span>savefig<span class="token punctuation
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/04/29/wo-de-stata-xue-xi/">
+                <a href="/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="我的stata学习">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="线性回归的简洁实现(Pytorch)">
                         
-                        <span class="card-title">我的stata学习</span>
+                        <span class="card-title">线性回归的简洁实现(Pytorch)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            整理一下stata的笔记
-use E:\grilic_small.dta,clear
-打开dta数据文件
-
-clear
-清空内存中的数据
-
-describe
-d
-审查数据
-
-list s lnw
-查看变量s和lnw的具体数据
-
-list s
+                            使用Pytorch进行线性回归的训练%matplotlib inline
+import torch
+from IPython import display
+from matplotlib import pyplot as plt
+impor
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-29
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-08-03
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/科研/" class="post-category" target="_blank">
-                                    科研
+                            <a href="/categories/Computer/" class="post-category" target="_blank">
+                                    Computer
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/neural-network-and-deep-learning/" target="_blank">
+                        <span class="chip bg-color">neural network and deep learning</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1148,26 +1171,30 @@ list s
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/04/27/wo-de-git-bi-ji/">
+                <a href="/2020/08/03/pandas-ji-chu-cao-zuo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="我的git笔记">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Pandas基础操作">
                         
-                        <span class="card-title">我的git笔记</span>
+                        <span class="card-title">Pandas基础操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一开始我对git还是比较抵触，学习成本较高，因为不懂所以不知其便利。但终究还是没有忍住git对我的诱惑，便尝试了起来。我是按照廖雪峰的git课程进行学习的。目前我也只能算是入门，还远没有达到精通的地步。现将git的学习笔记进行一下整理。
+                            Seriesimport numpy as np
+import pandas as pd
+from pandas import Series,DataFrame
 
+#利用列表、字典生成Series
 
+se_list = Series([1,
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-08-03
                             </span>
                         <span class="publish-author">
                             
@@ -1184,8 +1211,8 @@ list s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/" target="_blank">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/Python/" target="_blank">
+                        <span class="chip bg-color">Python</span>
                     </a>
                     
                 </div>
@@ -1359,7 +1386,7 @@ list s
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">75.5k</span>
+            <span class="white-color">76.8k</span>
             
 
             <br>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-08-03T11:25:51.255Z</updated>
+  <updated>2020-08-03T14:56:29.694Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性回归的简洁实现(Pytorch)</title>
+    <link href="http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/"/>
+    <id>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/</id>
+    <published>2020-08-03T14:52:06.000Z</published>
+    <updated>2020-08-03T14:56:29.694Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;a href=&quot;#使用Pytorch进行线性回归的训练&quot; class=&quot;headerlink&quot; title=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;/a&gt;使用Pytorch进行线性回归的训练&lt;/h1&gt;&lt;pre
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性回归从零开始实现(Pytorch)</title>
+    <link href="http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/"/>
+    <id>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/</id>
+    <published>2020-08-03T14:50:01.000Z</published>
+    <updated>2020-08-03T14:57:22.096Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;a href=&quot;#使用Pytorch进行线性回归的训练&quot; class=&quot;headerlink&quot; title=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;/a&gt;使用Pytorch进行线性回归的训练&lt;/h1&gt;&lt;pre
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>Pandas基础操作</title>
@@ -487,57 +539,6 @@ describer
     
       <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>论文阅读</title>
-    <link href="http://beichen1994.github.io/2020/05/09/lun-wen-yue-du/"/>
-    <id>http://beichen1994.github.io/2020/05/09/lun-wen-yue-du/</id>
-    <published>2020-05-09T11:58:12.000Z</published>
-    <updated>2020-05-11T13:02:41.276Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;论文分类&lt;br&gt;  (以时间顺序)&lt;br&gt;  任务驱动：按研究主题、研究方法、结论&lt;br&gt; 
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Latex学习笔记</title>
-    <link href="http://beichen1994.github.io/2020/05/08/latex-xue-xi-bi-ji/"/>
-    <id>http://beichen1994.github.io/2020/05/08/latex-xue-xi-bi-ji/</id>
-    <published>2020-05-08T13:27:40.000Z</published>
-    <updated>2020-05-12T00:45:00.273Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;组织文档结构&quot;&gt;&lt;a href=&quot;#组织文档结构&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
-    
-    
-      <category term="latex" scheme="http://beichen1994.github.io/tags/latex/"/>
     
   </entry>
   

@@ -1,3 +1,5 @@
+http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/
+http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/
 http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/
 http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/
 http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/
@@ -22,9 +24,7 @@ http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji
 http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/
 http://beichen1994.github.io/2020/05/05/chong-xin-shi-qi-wo-de-java/
 http://beichen1994.github.io/2020/05/05/wo-de-docker-shi-yong-2/
-http://beichen1994.github.io/2020/04/30/wo-de-ke-shi-hua-bi-ji-2/
 http://beichen1994.github.io/2020/04/29/wo-de-stata-xue-xi/
-http://beichen1994.github.io/2020/04/29/wo-de-ke-shi-hua-bi-ji-1/
 http://beichen1994.github.io/2020/04/27/wo-de-git-bi-ji/
 http://beichen1994.github.io/2020/04/27/wo-de-zheng-ze-biao-da-shi-zong-jie/
 http://beichen1994.github.io/2020/04/27/wo-de-python-xue-xi-bi-ji/
