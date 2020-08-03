@@ -1,3 +1,5 @@
+http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/
+http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/
 http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/
 http://beichen1994.github.io/2020/06/07/excel-ji-lu/
 http://beichen1994.github.io/2020/05/25/snippets-chu-tan/

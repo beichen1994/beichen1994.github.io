@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-07-07T07:17:26.503Z</updated>
+  <updated>2020-08-03T11:25:51.255Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pandas基础操作</title>
+    <link href="http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/"/>
+    <id>http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/</id>
+    <published>2020-08-03T11:23:42.000Z</published>
+    <updated>2020-08-03T11:25:51.255Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Series&quot;&gt;&lt;a href=&quot;#Series&quot; class=&quot;headerlink&quot; title=&quot;Series&quot;&gt;&lt;/a&gt;Series&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="Python" scheme="http://beichen1994.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas基础操作</title>
+    <link href="http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/"/>
+    <id>http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/</id>
+    <published>2020-08-03T11:17:09.000Z</published>
+    <updated>2020-08-03T11:22:58.741Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;torch-Tensor&quot;&gt;&lt;a href=&quot;#torch-Tensor&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>深度学习模型整理</title>
@@ -486,59 +538,6 @@ describer
     
     
       <category term="latex" scheme="http://beichen1994.github.io/tags/latex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的chrome插件vimium使用记录</title>
-    <link href="http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/"/>
-    <id>http://beichen1994.github.io/2020/05/08/wo-de-chrome-cha-jian-vimium-shi-yong-ji-lu/</id>
-    <published>2020-05-08T06:04:53.000Z</published>
-    <updated>2020-05-08T07:06:10.001Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;如果电脑上的一切都可以用键盘来完成，那该是多么美好的一件事情啊！&lt;/p&gt;
-&lt;p&gt;至少在chrome浏览器中，可以让我们做到这一点了，那就是chrome插件，vimium。从名字来看，应该就是仿照vim来使用的。&lt;/p&gt;
-&lt;p&gt;我觉得一开始使用它，第一步还是要把它的快捷键操作
-        
-      
-    
-    </summary>
-    
-      <category term="神器" scheme="http://beichen1994.github.io/categories/%E7%A5%9E%E5%99%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>爬虫管理平台使用</title>
-    <link href="http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/"/>
-    <id>http://beichen1994.github.io/2020/05/06/pa-chong-guan-li-ping-tai-shi-yong/</id>
-    <published>2020-05-06T14:21:57.000Z</published>
-    <updated>2020-05-20T13:17:25.737Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;#爬虫管理平台&lt;/p&gt;
-&lt;p&gt;我目前的爬虫都是一个个单独的程序文件，顶多同步到github，并没有一个统一的可视化管理平台。之前看到过崔大的&lt;a href=&quot;https://github.com/Gerapy/Gerapy&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
-    
-    
-      <category term="爬虫" scheme="http://beichen1994.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
