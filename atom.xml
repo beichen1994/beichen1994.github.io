@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-08-08T03:30:39.453Z</updated>
+  <updated>2020-08-10T13:33:55.724Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文本挖掘从小白到精通</title>
+    <link href="http://beichen1994.github.io/2020/08/10/wen-ben-wa-jue-cong-xiao-bai-dao-jing-tong/"/>
+    <id>http://beichen1994.github.io/2020/08/10/wen-ben-wa-jue-cong-xiao-bai-dao-jing-tong/</id>
+    <published>2020-08-10T13:32:23.000Z</published>
+    <updated>2020-08-10T13:33:55.724Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; logging
+logging&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>读&lt;高效能人士的七个习惯&gt;</title>
@@ -506,32 +533,6 @@ describer
         
         
           &lt;h1 id=&quot;蜀道难&quot;&gt;&lt;a href=&quot;#蜀道难&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初高中古文汇总2</title>
-    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-2/"/>
-    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-2/</id>
-    <published>2020-05-12T01:25:53.000Z</published>
-    <updated>2020-05-12T01:29:41.760Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;游褒禅山记&quot;&gt;&lt;a href=&quot;#游褒禅山记&quot; class=&quot;headerlink&quot;
         
       
     
