@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-08-10T13:33:55.724Z</updated>
+  <updated>2020-08-19T12:21:21.926Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pytorch构建神经网络(一)</title>
+    <link href="http://beichen1994.github.io/2020/08/19/pytorch-gou-jian-shen-jing-wang-luo-yi/"/>
+    <id>http://beichen1994.github.io/2020/08/19/pytorch-gou-jian-shen-jing-wang-luo-yi/</id>
+    <published>2020-08-19T12:14:13.000Z</published>
+    <updated>2020-08-19T12:21:21.926Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pytorch构建神经网络（一）（1-13节）&quot;&gt;&lt;a href=&quot;#Pytorch构建神经网络（一）（1-13节）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>文本挖掘从小白到精通</title>
@@ -507,32 +533,6 @@ describer
         
         
           &lt;h1 id=&quot;史记-屈原列传&quot;&gt;&lt;a href=&quot;#史记-屈原列传&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初高中古文汇总3</title>
-    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-3/"/>
-    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-3/</id>
-    <published>2020-05-12T01:31:17.000Z</published>
-    <updated>2020-05-12T01:35:04.775Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;蜀道难&quot;&gt;&lt;a href=&quot;#蜀道难&quot; class=&quot;headerlink&quot;
         
       
     
