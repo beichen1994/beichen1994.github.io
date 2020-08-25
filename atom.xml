@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2020-08-19T12:21:21.926Z</updated>
+  <updated>2020-08-25T11:49:00.532Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pytorch构建神经网络(二)</title>
+    <link href="http://beichen1994.github.io/2020/08/25/pytorch-gou-jian-shen-jing-wang-luo-er/"/>
+    <id>http://beichen1994.github.io/2020/08/25/pytorch-gou-jian-shen-jing-wang-luo-er/</id>
+    <published>2020-08-25T11:46:00.000Z</published>
+    <updated>2020-08-25T11:49:00.532Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pytorch神经网络构建-二-（13-28节）&quot;&gt;&lt;a href=&quot;#Pytorch神经网络构建-二-（13-28节）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
   
   <entry>
     <title>Pytorch构建神经网络(一)</title>
@@ -507,32 +533,6 @@ describer
         
         
           &lt;h1 id=&quot;马说&quot;&gt;&lt;a href=&quot;#马说&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="古文" scheme="http://beichen1994.github.io/tags/%E5%8F%A4%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初高中古文汇总4</title>
-    <link href="http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/"/>
-    <id>http://beichen1994.github.io/2020/05/12/chu-gao-zhong-gu-wen-hui-zong-4/</id>
-    <published>2020-05-12T01:35:11.000Z</published>
-    <updated>2020-05-12T02:07:04.255Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;史记-屈原列传&quot;&gt;&lt;a href=&quot;#史记-屈原列传&quot; class=&quot;headerlink&quot;
         
       
     
