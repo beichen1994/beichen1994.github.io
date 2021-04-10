@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>王玉奇的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://beichen1994.github.io/"/>
+  <updated>2021-04-10T01:22:56.000Z</updated>
+  <id>http://beichen1994.github.io/</id>
+  
+  <author>
+    <name>王玉奇</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>成功只因奋斗而美丽</title>
+    <link href="http://beichen1994.github.io/2021/04/10/cheng-gong-zhi-yin-fen-dou-er-mei-li/"/>
+    <id>http://beichen1994.github.io/2021/04/10/cheng-gong-zhi-yin-fen-dou-er-mei-li/</id>
+    <published>2021-04-10T01:18:02.000Z</published>
+    <updated>2021-04-10T01:22:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;ensp;&amp;ensp;成功的花，人们只惊羡她现时的明艳，然而当初她的芽儿却浸透了奋斗的泪泉，洒遍了牺牲的血雨。 
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python制图-2020-09-05</title>
+    <link href="http://beichen1994.github.io/2020/09/06/python-zhi-tu-2020-09-05/"/>
+    <id>http://beichen1994.github.io/2020/09/06/python-zhi-tu-2020-09-05/</id>
+    <published>2020-09-05T19:13:13.000Z</published>
+    <updated>2020-09-05T11:16:28.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; matplotlib
+&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="数据可视化" scheme="http://beichen1994.github.io/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch构建神经网络(二)</title>
+    <link href="http://beichen1994.github.io/2020/08/25/pytorch-gou-jian-shen-jing-wang-luo-er/"/>
+    <id>http://beichen1994.github.io/2020/08/25/pytorch-gou-jian-shen-jing-wang-luo-er/</id>
+    <published>2020-08-25T11:46:00.000Z</published>
+    <updated>2020-08-25T03:49:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pytorch神经网络构建-二-（13-28节）&quot;&gt;&lt;a href=&quot;#Pytorch神经网络构建-二-（13-28节）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch构建神经网络(一)</title>
+    <link href="http://beichen1994.github.io/2020/08/19/pytorch-gou-jian-shen-jing-wang-luo-yi/"/>
+    <id>http://beichen1994.github.io/2020/08/19/pytorch-gou-jian-shen-jing-wang-luo-yi/</id>
+    <published>2020-08-19T12:14:13.000Z</published>
+    <updated>2020-08-19T04:21:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Pytorch构建神经网络（一）（1-13节）&quot;&gt;&lt;a href=&quot;#Pytorch构建神经网络（一）（1-13节）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文本挖掘从小白到精通</title>
+    <link href="http://beichen1994.github.io/2020/08/10/wen-ben-wa-jue-cong-xiao-bai-dao-jing-tong/"/>
+    <id>http://beichen1994.github.io/2020/08/10/wen-ben-wa-jue-cong-xiao-bai-dao-jing-tong/</id>
+    <published>2020-08-10T13:32:23.000Z</published>
+    <updated>2020-08-10T05:33:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; logging
+logging&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读&lt;高效能人士的七个习惯&gt;</title>
+    <link href="http://beichen1994.github.io/2020/08/08/du-gao-xiao-neng-ren-shi-de-qi-ge-xi-guan/"/>
+    <id>http://beichen1994.github.io/2020/08/08/du-gao-xiao-neng-ren-shi-de-qi-ge-xi-guan/</id>
+    <published>2020-08-08T03:27:45.000Z</published>
+    <updated>2020-08-07T19:30:38.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;读了这本书的第一章，书中讲到几个关键词、观念、品德、原则、个人魅力说、由内而外、反求诸己。决定我们生活与事业顺利与否的，是我们的观念与原则，而不是只能决定一时成败的个人魅力说。（好羞耻，读了一大章，就总结出这么个玩意）&lt;/p&gt;
+&lt;p&gt;由内而外的修为强调，先追求个人的成功，才
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="读书笔记" scheme="http://beichen1994.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读&lt;金刚般若波罗蜜多经&gt;</title>
+    <link href="http://beichen1994.github.io/2020/08/08/du-jin-gang-ban-ruo-bo-luo-mi-duo-jing/"/>
+    <id>http://beichen1994.github.io/2020/08/08/du-jin-gang-ban-ruo-bo-luo-mi-duo-jing/</id>
+    <published>2020-08-08T03:27:17.000Z</published>
+    <updated>2020-08-07T19:31:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;金刚般若波罗蜜经&quot;&gt;&lt;a href=&quot;#金刚般若波罗蜜经&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="读书笔记" scheme="http://beichen1994.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读&lt;为何爱会伤人&gt;</title>
+    <link href="http://beichen1994.github.io/2020/08/08/du-wei-he-ai-hui-shang-ren/"/>
+    <id>http://beichen1994.github.io/2020/08/08/du-wei-he-ai-hui-shang-ren/</id>
+    <published>2020-08-08T03:26:50.000Z</published>
+    <updated>2020-08-07T19:32:04.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;##1 迷恋：源自幻像的爱&lt;br&gt;    每个人心目中都有一个理想异性的模型。同时，我们还有大量的关于现实异性的信息。现实异性，主要来自于我们的异性父母或重要的异性抚养者。理想异性，则源自缺失和幻想。&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="读书笔记" scheme="http://beichen1994.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读&lt;小狗钱钱&gt;</title>
+    <link href="http://beichen1994.github.io/2020/08/08/du-xiao-gou-qian-qian/"/>
+    <id>http://beichen1994.github.io/2020/08/08/du-xiao-gou-qian-qian/</id>
+    <published>2020-08-08T03:26:28.000Z</published>
+    <updated>2020-08-07T19:33:04.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;3个梦想&quot;&gt;&lt;a href=&quot;#3个梦想&quot; class=&quot;headerlink&quot; title=&quot;3个梦想&quot;&gt;&lt;/a&gt;3个梦想&lt;/h4&gt;&lt;h4 id=&quot;梦想储蓄罐：为梦想存钱&quot;&gt;&lt;a href=&quot;#梦想储蓄罐：为梦想存钱&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="读书笔记" scheme="http://beichen1994.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性回归的简洁实现(Pytorch)</title>
+    <link href="http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/"/>
+    <id>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-de-jian-ji-shi-xian-pytorch/</id>
+    <published>2020-08-03T14:52:06.000Z</published>
+    <updated>2020-08-03T06:56:28.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;a href=&quot;#使用Pytorch进行线性回归的训练&quot; class=&quot;headerlink&quot; title=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;/a&gt;使用Pytorch进行线性回归的训练&lt;/h1&gt;&lt;pre
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>线性回归从零开始实现(Pytorch)</title>
+    <link href="http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/"/>
+    <id>http://beichen1994.github.io/2020/08/03/xian-xing-hui-gui-cong-ling-kai-shi-shi-xian-pytorch/</id>
+    <published>2020-08-03T14:50:01.000Z</published>
+    <updated>2020-08-03T06:57:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;a href=&quot;#使用Pytorch进行线性回归的训练&quot; class=&quot;headerlink&quot; title=&quot;使用Pytorch进行线性回归的训练&quot;&gt;&lt;/a&gt;使用Pytorch进行线性回归的训练&lt;/h1&gt;&lt;pre
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pandas基础操作</title>
+    <link href="http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/"/>
+    <id>http://beichen1994.github.io/2020/08/03/pandas-ji-chu-cao-zuo/</id>
+    <published>2020-08-03T11:23:42.000Z</published>
+    <updated>2020-08-03T03:25:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Series&quot;&gt;&lt;a href=&quot;#Series&quot; class=&quot;headerlink&quot; title=&quot;Series&quot;&gt;&lt;/a&gt;Series&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="Python" scheme="http://beichen1994.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch基础操作</title>
+    <link href="http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/"/>
+    <id>http://beichen1994.github.io/2020/08/03/pytorch-ji-chu-cao-zuo/</id>
+    <published>2020-08-03T11:17:09.000Z</published>
+    <updated>2020-08-03T03:28:48.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;torch-Tensor&quot;&gt;&lt;a href=&quot;#torch-Tensor&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习模型整理</title>
+    <link href="http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/"/>
+    <id>http://beichen1994.github.io/2020/07/07/shen-du-xue-xi-mo-xing-zheng-li/</id>
+    <published>2020-07-07T05:59:45.000Z</published>
+    <updated>2020-07-06T23:17:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天在知乎看到一篇介绍深度学习模型的文章,点击&lt;a href=&quot;https://zhuanlan.zhihu.com/p/50967380&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;,特此进行记录&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="neural network and deep learning" scheme="http://beichen1994.github.io/tags/neural-network-and-deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel记录</title>
+    <link href="http://beichen1994.github.io/2020/06/07/excel-ji-lu/"/>
+    <id>http://beichen1994.github.io/2020/06/07/excel-ji-lu/</id>
+    <published>2020-06-07T05:41:15.000Z</published>
+    <updated>2020-06-06T21:46:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;界面&quot;&gt;&lt;a href=&quot;#界面&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Excel" scheme="http://beichen1994.github.io/tags/Excel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>snippets初探</title>
+    <link href="http://beichen1994.github.io/2020/05/25/snippets-chu-tan/"/>
+    <id>http://beichen1994.github.io/2020/05/25/snippets-chu-tan/</id>
+    <published>2020-05-25T04:23:19.000Z</published>
+    <updated>2020-06-03T07:18:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;** 格式&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;snippet TAB 关键字
+    代码片段&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;变量 ${#} 
+${1:true}
+${2:/*condition*/}
+${3:}
+${4:data}
+${5}
+${0}
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://beichen1994.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学计量学的相关概念</title>
+    <link href="http://beichen1994.github.io/2020/05/21/ke-xue-ji-liang-xue-de-xiang-guan-gai-nian/"/>
+    <id>http://beichen1994.github.io/2020/05/21/ke-xue-ji-liang-xue-de-xiang-guan-gai-nian/</id>
+    <published>2020-05-21T13:59:19.000Z</published>
+    <updated>2020-06-03T07:09:34.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;文献耦合&quot;&gt;&lt;a href=&quot;#文献耦合&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="科研" scheme="http://beichen1994.github.io/categories/%E7%A7%91%E7%A0%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>毛泽东诗词</title>
+    <link href="http://beichen1994.github.io/2020/05/20/mao-ze-dong-shi-ci/"/>
+    <id>http://beichen1994.github.io/2020/05/20/mao-ze-dong-shi-ci/</id>
+    <published>2020-05-20T12:31:10.000Z</published>
+    <updated>2020-05-20T05:27:48.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;西江月-井冈山&quot;&gt;&lt;a href=&quot;#西江月-井冈山&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="诗词" scheme="http://beichen1994.github.io/tags/%E8%AF%97%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker容器中安装并连接ssh</title>
+    <link href="http://beichen1994.github.io/2020/05/13/docker-rong-qi-zhong-an-zhuang-bing-lian-jie-ssh/"/>
+    <id>http://beichen1994.github.io/2020/05/13/docker-rong-qi-zhong-an-zhuang-bing-lian-jie-ssh/</id>
+    <published>2020-05-13T09:09:20.000Z</published>
+    <updated>2020-05-13T01:21:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;痛点&quot;&gt;&lt;a href=&quot;#痛点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="docker" scheme="http://beichen1994.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>超喜爱的《第25小时》电影台词</title>
+    <link href="http://beichen1994.github.io/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/"/>
+    <id>http://beichen1994.github.io/2020/05/13/chao-xi-ai-de-di-25-xiao-shi-dian-ying-tai-ci/</id>
+    <published>2020-05-13T06:57:52.000Z</published>
+    <updated>2020-05-13T01:29:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;诺顿在&lt;a href=&quot;https://www.bilibili.com/video/av26231244/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="电影台词" scheme="http://beichen1994.github.io/tags/%E7%94%B5%E5%BD%B1%E5%8F%B0%E8%AF%8D/"/>
+    
+  </entry>
+  
+</feed>
