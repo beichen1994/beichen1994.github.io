@@ -1,4 +1,3 @@
-http://beichen1994.github.io/2021/04/10/cheng-gong-zhi-yin-fen-dou-er-mei-li/
 http://beichen1994.github.io/2020/09/06/python-zhi-tu-2020-09-05/
 http://beichen1994.github.io/2020/08/25/pytorch-gou-jian-shen-jing-wang-luo-er/
 http://beichen1994.github.io/2020/08/19/pytorch-gou-jian-shen-jing-wang-luo-yi/

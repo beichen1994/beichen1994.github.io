@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://beichen1994.github.io/"/>
-  <updated>2021-04-10T01:22:56.000Z</updated>
+  <updated>2020-09-05T11:16:28.000Z</updated>
   <id>http://beichen1994.github.io/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>成功只因奋斗而美丽</title>
-    <link href="http://beichen1994.github.io/2021/04/10/cheng-gong-zhi-yin-fen-dou-er-mei-li/"/>
-    <id>http://beichen1994.github.io/2021/04/10/cheng-gong-zhi-yin-fen-dou-er-mei-li/</id>
-    <published>2021-04-10T01:18:02.000Z</published>
-    <updated>2021-04-10T01:22:56.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;ensp;&amp;ensp;成功的花，人们只惊羡她现时的明艳，然而当初她的芽儿却浸透了奋斗的泪泉，洒遍了牺牲的血雨。 
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://beichen1994.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
   
   <entry>
     <title>Python制图-2020-09-05</title>
@@ -537,6 +513,36 @@ ${0}
     
     
       <category term="电影台词" scheme="http://beichen1994.github.io/tags/%E7%94%B5%E5%BD%B1%E5%8F%B0%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL数据库命令</title>
+    <link href="http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/"/>
+    <id>http://beichen1994.github.io/2020/05/12/mysql-shu-ju-ku-ming-ling/</id>
+    <published>2020-05-12T02:28:50.000Z</published>
+    <updated>2020-05-13T17:51:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础命令&quot;&gt;&lt;a href=&quot;#基础命令&quot; class=&quot;headerlink&quot; title=&quot;基础命令&quot;&gt;&lt;/a&gt;基础命令&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;show databases;
+
+use company;
+show tables;
+describer
+        
+      
+    
+    </summary>
+    
+      <category term="Computer" scheme="http://beichen1994.github.io/categories/Computer/"/>
+    
+    
+      <category term="数据库" scheme="http://beichen1994.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
